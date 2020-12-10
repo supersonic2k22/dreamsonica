@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const WrapperCustomerTestimonials = styled.div `
-    padding: 4em 0;
+    padding: 10em 0;
     background: #eaeaea;
 `;
 

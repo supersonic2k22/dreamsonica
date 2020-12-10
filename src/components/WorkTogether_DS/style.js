@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const Wrapper = styled.div`
-  padding: 4em 0;
-  background: #e5e5e5;
+  padding: 10em 0;
+  background: #eff0f2;
   
   
   .content_title {
@@ -35,7 +35,6 @@ export const HelperElement = styled.div `
 
 
 export const WrapperCarousel = styled.div `
-  
   @media(max-width: 1199px) {
     margin-bottom: 2em;
   }
@@ -170,8 +169,7 @@ export const WorkTogetherIconBtn = styled.button `
   border-radius: 5em;
   font-size: 1.3em;
   font-weight: 700;
-  box-shadow: 0 0 10px 5px #f7941d;
-  border: none;
+  border: 2px solid orange;
   color: white;
   cursor:pointer;
   transition: .7s;
@@ -179,8 +177,7 @@ export const WorkTogetherIconBtn = styled.button `
   outline: none;
   }
   :hover {
-  background: orangered;
-  box-shadow: 0 0 10px 5px orangered;
-  color: initial;
+  background: transparent;
+    color: orange;
   }
 `;

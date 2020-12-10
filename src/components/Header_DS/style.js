@@ -36,7 +36,7 @@ export const WrapperPromo = styled.div `
 
 export const PromoTitle = styled.h1 `
   margin-bottom: 30px;
-  font-size: calc(.085*100vw);;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1;
 `;
@@ -48,24 +48,24 @@ export const PromoText = styled.p `
 `;
 
 export const PromoButton = styled.a `
-  padding: 1.5em 5em;
+  padding: 22px 90px;
   background: #f7941d;
   border-radius: 5em;
   font-size: 1.3em;
-  font-weight: 700;
+  font-weight: 600;
+  border: 2px solid orange;
   color: white;
-  transition: .7s;
-  box-shadow: 0 0 15px 5px #f7941d;
+  transition: .4s;
   :hover {
-  background: orangered;
-  box-shadow: 0 0 15px 5px orangered;
+  background: transparent;
   transform: translateX(10px);
-  color: initial;
+  color: orange;
   }
   @media(max-width: 425px) {
       padding: 1em 2.5em;
   }
 `;
+
 
 export const WrapperNavbar = styled.div `
     position: fixed;

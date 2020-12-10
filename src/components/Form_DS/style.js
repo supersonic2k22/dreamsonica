@@ -24,16 +24,18 @@ export const WrapperFrom = styled.div `
   }
   .form_submit_btn {
   font-size: 20px;
-  padding: 10px 50px;
+  padding: 12px 90px;
+  font-weight: 600;
   color: white;
   background: orange;
-  border: none;
-  border-radius: 1em;
+  border: 2px solid orange;
+  border-radius: 2em;
   cursor: pointer;
-  transition-duration: .8s;
+  transition-duration: .4s;
   }
   .form_submit_btn:hover{
-   background: #ff6f00;
+   background: transparent;
+    color: #ff8d00;
   }
   .form_submit_btn:focus {
   outline: none;

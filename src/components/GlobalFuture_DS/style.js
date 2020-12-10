@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const WrapperGlobalFuture = styled.div `
-  padding: 4em 0;
+  padding: 10em 0;
 `;
 
 export const GlobalFutureTitle  = styled.h2 `

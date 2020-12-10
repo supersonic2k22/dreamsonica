@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const WrapperService = styled.div `
-  padding: 4em 0;
+  padding: 8em 0;
   background: #f1f0f0;
   
 `;

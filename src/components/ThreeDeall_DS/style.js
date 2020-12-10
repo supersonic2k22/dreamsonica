@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const WrapperThreeDeal = styled.div `
-padding: 4em 0;
+padding: 10em 0;
+  box-shadow: 5px -21px 60px 45px white;
 `;
 
 export const ThreeDealTitle = styled.h2 `

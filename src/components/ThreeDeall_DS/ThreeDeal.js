@@ -17,28 +17,6 @@ export default class ThreeDeal extends Component {
 
     dealCard = createRef()
 
-
-    componentDidMount() {
-        // this.dealCard.current = []
-        // console.log(this.dealCard)
-        // ScrollTrigger.matchMedia({
-        //
-        //
-        //     'all': () => {
-        //       this.dealCard.forEach(item => {
-        //           gsap.to(item, {
-        //               scrollTrigger: item,
-        //               autoAlpha: 0,
-        //               duration: 1.4,
-        //               stagger: 0.25
-        //           })
-        //       })
-        //     }
-        // })
-    }
-
-
-
     render() {
         return (
             <WrapperThreeDeal>
@@ -52,7 +30,7 @@ export default class ThreeDeal extends Component {
                     </Row>
                     <Row>
                         <Col md={12} lg={9}>
-                            <ThreeDealText>
+                            <ThreeDealText styles={{fontFamily: 'Montserrat, sans-serif !important'}}>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Accusamus cupiditate earum fugit harum nostrum quibusdam quo repellat suscipit tempora unde.
                                 Accusamus cupiditate earum fugit harum nostrum quibusdam quo repellat suscipit tempora unde.
@@ -69,6 +47,8 @@ export default class ThreeDeal extends Component {
                                 <h3 className="threeDeal_title">Hello world</h3>
                                 <p className="threeDeal_text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
                                 </p>
                             </ThreeDealBox>
                         </Col>
@@ -79,7 +59,6 @@ export default class ThreeDeal extends Component {
                                 </div>
                                 <h3 className="threeDeal_title">Hello world</h3>
                                 <p className="threeDeal_text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.

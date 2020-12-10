@@ -35,9 +35,6 @@ export default class FullStaff extends Component{
                                </p>
                            </FullStaffContent>
                        </Col>
-                       <Col lg={12} style={{marginBottom: '3em'}}>
-                            <LeadShipCarousel/>
-                       </Col>
                        <Col lg={12}>
                             <Talent/>
                        </Col>

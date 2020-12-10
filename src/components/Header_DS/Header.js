@@ -80,7 +80,7 @@ class Header extends Component{
                 <ReactPlayer
                     className='react-player'
                     url={[
-                        {src: 'assets/video/Number - 18997.mp4', type: 'video/mp4'}
+                        {src: 'https://www.newfireglobal.com/wp-content/uploads/2020/08/New-Fire-Web_c.mp4', type: 'video/mp4'}
                     ]}
                     playing={playing}
                     loop={true}

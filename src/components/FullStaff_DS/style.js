@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const WrapperFullStaff = styled.div `
-  padding: 3em 0;
-  background: aliceblue;
+  padding: 8em 0 3em;
+  background: white;
 `;
 export const FullStaffContent = styled.div `
     margin-bottom: 3em;

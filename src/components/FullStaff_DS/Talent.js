@@ -3,18 +3,12 @@ import CarouselComponent from "./CarouselComponent";
 import {WrapperStuffShip} from "./style";
 
 const collectionStuff = [
-    {key: 0, image: 'assets/stuff/unnamed (2).jpg'},
-    {key: 1, image: 'assets/stuff/1b6ba9567a62af8034f5f2a507a04369.jpg'},
-    {key: 2, image: 'assets/stuff/kingfisher-1.jpg'},
-    {key: 3, image: 'assets/stuff/unnamed (2).jpg'},
-    {key: 4, image: 'assets/stuff/1b6ba9567a62af8034f5f2a507a04369.jpg'},
-    {key: 5, image: 'assets/stuff/kingfisher-1.jpg'},
-    {key: 6, image: 'assets/stuff/unnamed (2).jpg'},
-    {key: 7, image: 'assets/stuff/1b6ba9567a62af8034f5f2a507a04369.jpg'},
-    {key: 8, image: 'assets/stuff/kingfisher-1.jpg'},
-    {key: 9, image: 'assets/stuff/unnamed (2).jpg'},
-    {key: 10, image: 'assets/stuff/1b6ba9567a62af8034f5f2a507a04369.jpg'},
-    {key: 11, image: 'assets/stuff/kingfisher-1.jpg'}
+    {key: 0, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/06/1.jpg.webp'},
+    {key: 1, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/06/7-copy.png.webp'},
+    {key: 2, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/07/4-2.png.webp'},
+    {key: 3, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/06/6-1.png.webp'},
+    {key: 4, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/07/5-1.png.webp'},
+    {key: 5, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/07/2-1.png.webp'}
 ];
 
 const Talent = () => {

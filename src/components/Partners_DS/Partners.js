@@ -70,7 +70,7 @@ const Partners = () => {
                 </Row>
                 <ScrollButtonUp ShowAtPosition={1270}
                                 AnimationDuration={1500}
-                                style={{borderRadius: '1em', background: 'orange', zIndex:"1"}}
+                                style={{borderRadius: '1em', background: 'orange', zIndex:"1", padding: 8}}
                 />
             </Container>
         </WrapperPartners>
