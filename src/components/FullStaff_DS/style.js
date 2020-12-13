@@ -11,6 +11,7 @@ export const FullStaffContent = styled.div `
       font-size: calc(.03 * 100vw);
       font-weight: 600;
       line-height: 1;
+      text-align: center;
     }
     .full_staff_text {
       font-size: 1.7em;

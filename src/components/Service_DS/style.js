@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 export const WrapperService = styled.div `
   padding: 8em 0;
-  background: #f1f0f0;
-  
+  background: white;
 `;
 
 export const WrapperServiceContent = styled.div `

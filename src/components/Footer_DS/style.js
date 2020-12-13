@@ -9,8 +9,9 @@ export const WrapperFooterContent = styled.div `
   background: RGBA(252,252,255,1);
 `;
 export const WrapperFooterPrivacy = styled.div `
-  padding: 2em 0;
-  background: #b3c2d6;
+  padding: 4em 0;
+  background: #636363;
+  color: #ccc;
 `;
 export const WrapperLogoFooter = styled.div `
   display: flex;
@@ -51,7 +52,7 @@ export const  PrivacyBrandFooter  = styled.div`
   
   .brand_footer_text {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1;
   }
   @media(max-width: 991px) {
@@ -64,9 +65,9 @@ export const  PrivacyPrivateFooter  = styled(PrivacyBrandFooter)`
   
   .private_link {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1;
-    color: black;
+    color: #ccc;
   }
   @media(max-width: 991px) {
     justify-content: center;

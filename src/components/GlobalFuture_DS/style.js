@@ -28,7 +28,7 @@ export const GlobalFutureItem = styled.div `
   text-align: center;
   border-radius: 3em;
   margin: 0 auto;
-  box-shadow: 0 0 50px 5px silver;
+  box-shadow: 3px 10px 7px 2px rgba(0, 0, 0, 0.2);
   
   
       .future_item_header_start img {

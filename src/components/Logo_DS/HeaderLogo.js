@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../static/video/ezgif.com-gif-maker.gif'
+import logo from '../../static/images/logo2x.png'
 import {
     WrapperLogoHeader
 } from './style';

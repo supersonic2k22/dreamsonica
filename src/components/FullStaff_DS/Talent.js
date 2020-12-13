@@ -2,19 +2,31 @@ import React from "react";
 import CarouselComponent from "./CarouselComponent";
 import {WrapperStuffShip} from "./style";
 
+
+
+import oneSlide from '../../static/images/sonica/clogo1.png'
+import twoSlide from '../../static/images/sonica/clogo2.png'
+import threeSlide from '../../static/images/sonica/clogo3.png'
+import fourSlide from '../../static/images/sonica/clogo4.png'
+import fiveSlide from '../../static/images/sonica/clogo5.png'
+import sixSlide from '../../static/images/sonica/clogo6.png'
+import sevenSlide from '../../static/images/sonica/clogo7.png'
+import eightSlide from '../../static/images/sonica/clogo8.png'
+
 const collectionStuff = [
-    {key: 0, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/06/1.jpg.webp'},
-    {key: 1, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/06/7-copy.png.webp'},
-    {key: 2, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/07/4-2.png.webp'},
-    {key: 3, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/06/6-1.png.webp'},
-    {key: 4, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/07/5-1.png.webp'},
-    {key: 5, image: 'https://www.newfireglobal.com/wp-content/uploads/2020/07/2-1.png.webp'}
+    {key: 0, image: oneSlide},
+    {key: 1, image: twoSlide},
+    {key: 2, image: threeSlide},
+    {key: 3, image: fourSlide},
+    {key: 4, image: fiveSlide},
+    {key: 5, image: sixSlide},
+    {key: 6, image: sevenSlide},
+    {key: 7, image: eightSlide}
 ];
 
 const Talent = () => {
     return (
         <WrapperStuffShip>
-            <h3 className="stuff_ship_title">Lorem ipsum dolor sit</h3>
             <CarouselComponent collectionSlider={ collectionStuff } />
         </WrapperStuffShip>
     )

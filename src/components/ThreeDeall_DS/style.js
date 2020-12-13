@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const WrapperThreeDeal = styled.div `
-padding: 10em 0;
+  padding: 8em 0;
   box-shadow: 5px -21px 60px 45px white;
 `;
 
 export const ThreeDealTitle = styled.h2 `
-  font-size: calc(.03 * 100vw);
-  font-weight: 600;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
   line-height: 1;
   @media  (max-width: 768px) {
    font-size: 32px;
@@ -19,11 +20,29 @@ export const ThreeDealTitle = styled.h2 `
 
 export const ThreeDealText = styled.p ` 
   margin-bottom: 60px;
-  font-size: 1.7em;
+  text-align: center;
+  font-size: 1.4em;
+`;
+
+export const HeroWrap = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+`;
+
+export const HeroBody = styled.div `
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+
+  @media screen and (min-width: 980px) {
+    padding: 8rem 1.5rem;
+  }  
 `;
 
 export const ThreeDealBox = styled.div `
-  
   .threeDeal_icon {
   padding: 0 1em;
   width: 100%;
@@ -42,12 +61,12 @@ export const ThreeDealBox = styled.div `
     line-height: 1.2;
   }
   .threeDeal_text {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   }
   @media (max-width: 1440px){
   .threeDeal_title{
-    font-size: 22px;
+    font-size: 18px;
     }
   }
 `;

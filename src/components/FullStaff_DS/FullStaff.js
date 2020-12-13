@@ -24,15 +24,9 @@ export default class FullStaff extends Component{
                <Element id="power_team"/>
                <Container>
                    <Row>
-                       <Col md={12} lg={7}>
+                       <Col md={12}>
                            <FullStaffContent>
-                               <h2 className="full_staff_title">Our the Best Stuff</h2>
-                               <p className="full_staff_text">
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                   Accusantium fugiat magni maxime molestiae, suscipit velit.
-                                   Accusantium fugiat magni maxime molestiae, suscipit velit.
-                                   Accusantium fugiat magni maxime molestiae, suscipit velit.
-                               </p>
+                               <h2 className="full_staff_title">Our Clients</h2>
                            </FullStaffContent>
                        </Col>
                        <Col lg={12}>

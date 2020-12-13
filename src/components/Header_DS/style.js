@@ -44,11 +44,11 @@ export const PromoTitle = styled.h1 `
 export const PromoText = styled.p `
   padding-right: 3em;
   margin-bottom: 3em;
-  font-size: 1.7em;
+  font-size: 1.4em;
 `;
 
 export const PromoButton = styled.a `
-  padding: 22px 90px;
+  padding: 17px 75px;
   background: #f7941d;
   border-radius: 5em;
   font-size: 1.3em;
@@ -66,7 +66,6 @@ export const PromoButton = styled.a `
   }
 `;
 
-
 export const WrapperNavbar = styled.div `
     position: fixed;
     top: 0;left: 0;
@@ -77,7 +76,7 @@ export const WrapperNavbar = styled.div `
           width: 100%;
           max-width: 1540px;
           margin: 0 auto;
-          padding: 0 1em;
+          padding: 1em 1em;
           overflow: hidden;
         }
 `;
@@ -86,7 +85,7 @@ export const TransitionNavbar = styled.div `
     visibility: visible;
     transition: all 200ms ease-in;
     background:${props => props.pointStyle ? 'RGBA(252,252,255,1)' : 'transparent'};
-    box-shadow:${props => props.pointStyle ? '0 5px 35px 1px black' : ''};
+    box-shadow:${props => props.pointStyle ? '0 4px 12px 0px rgba(0, 0, 0, 0.2)' : ''};
   }
   .hidden {
     visibility: hidden;
@@ -95,7 +94,7 @@ export const TransitionNavbar = styled.div `
   }
 `;
 
-export const WrapperMenu = styled.div ` 
+export const WrapperMenu = styled.div `
 display: flex;
 align-content: center;
 justify-content: flex-end;

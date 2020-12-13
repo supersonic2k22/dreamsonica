@@ -46,12 +46,10 @@ export default class Home extends Component {
                 <Sugar  color={'orangered'} time={4000}/>
                     <Header toScroll={this.scrollTo} />
                     <ThreeDeal/>
-                    <WorkTogetherContent/>
-                    <FullStaff/>
-                    <Partners/>
-                    <Service/>
                     <GlobalFuture/>
-                    <CustomerTestimonials/>
+                    <WorkTogetherContent/>
+                    <Service/>
+                    <FullStaff/>
                     <Form/>
                     <Footer/>
             </ScreenClassProvider>

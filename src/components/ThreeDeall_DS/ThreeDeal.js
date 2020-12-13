@@ -1,85 +1,116 @@
-import React, { createRef, Component, forwardRef } from "react";
-import {gsap,
-        ScrollTrigger
-    } from 'gsap/all'
+import React, {createRef, Component, useRef, useState} from "react";
 import {Container, Row, Col} from "react-grid-system";
 import {
     WrapperThreeDeal,
     ThreeDealTitle,
-    ThreeDealText,
-    ThreeDealBox
+    ThreeDealText, HeroWrap, HeroBody
 } from './style';
+import ReactParticles from "react-particles-js";
 
-gsap.registerPlugin(ScrollTrigger)
+const params = {
+    particles: {
+        number: {
+            value: 100,
+            density: {
+                enable: false,
+                value_area: 600
+            }
+        },
+        color: {
+            value: '#000'
+        },
+        opacity: {
+            value: 0.8,
+            random: false,
+            anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+            }
+        },
+        size: {
+            value: 3,
+            random: true,
+            anim: {
+                enable: true,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+            }
+        },
+        line_linked: {
+            enable: true,
+            distance: 100,
+            color: '#000',
+            opacity: 0.7,
+            width: 1
+        }
+    },
+    retina_detect: true
+};
+
+
+
+const Particles = ({ children }) => {
+    return (
+        <div style={{ position: 'relative' }}>
+            <ReactParticles
+                params={params}
+                style={{
+                    position: 'absolute',
+                    zIndex: -1,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    top: 0
+                }}
+                height={850}
+            />
+            {children && <div style={{ position: 'relative' }}>{children}</div>}
+        </div>
+    );
+}
+
+const Hero = ({ children }) => {
+    return (
+        <HeroWrap className="hero">
+            <HeroBody className="hero-body">{children}</HeroBody>
+        </HeroWrap>
+    );
+}
 
 export default class ThreeDeal extends Component {
-
-
     dealCard = createRef()
 
     render() {
         return (
             <WrapperThreeDeal>
-                <Container>
-                    <Row>
-                        <Col lg={12}>
-                            <ThreeDealTitle>
-                                The three main our deal!
-                            </ThreeDealTitle>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={12} lg={9}>
-                            <ThreeDealText styles={{fontFamily: 'Montserrat, sans-serif !important'}}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Accusamus cupiditate earum fugit harum nostrum quibusdam quo repellat suscipit tempora unde.
-                                Accusamus cupiditate earum fugit harum nostrum quibusdam quo repellat suscipit tempora unde.
-                                Accusamus cupiditate earum fugit harum nostrum quibusdam quo repellat suscipit tempora unde.
-                            </ThreeDealText>
-                        </Col>
-                    </Row>
-                    <Row justify={"around"}>
-                        <Col sm={12} md={4} ref={ item => { this.dealCard.current[0] = item }}>
-                            <ThreeDealBox>
-                                <div className="threeDeal_icon">
-                                    <img src={require('../../static/images/thre_deal_Talent_ico.svg')} alt=""/>
-                                </div>
-                                <h3 className="threeDeal_title">Hello world</h3>
-                                <p className="threeDeal_text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                </p>
-                            </ThreeDealBox>
-                        </Col>
-                        <Col sm={12} md={4} ref={item => { this.dealCard.current[1] = item }}>
-                            <ThreeDealBox>
-                                <div className="threeDeal_icon">
-                                    <img src={require('../../static/images/three_deal_Advisory_ico.svg')} alt=""/>
-                                </div>
-                                <h3 className="threeDeal_title">Hello world</h3>
-                                <p className="threeDeal_text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                </p>
-                            </ThreeDealBox>
-                        </Col>
-                        <Col sm={12} md={4} ref={item => { this.dealCard.current[2] = item }}>
-                            <ThreeDealBox>
-                                <div className="threeDeal_icon">
-                                    <img src={require('../../static/images/three_deal_AI_insights.svg')} alt=""/>
-                                </div>
-                                <h3 className="threeDeal_title">Hello world</h3>
-                                <p className="threeDeal_text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus facere inventore optio, quae rem.
-                                </p>
-                            </ThreeDealBox>
-                        </Col>
-                    </Row>
-                </Container>
+                <Particles>
+                    <Hero>
+                        <Container>
+                            <Row>
+                                <Col lg={12}>
+                                    <ThreeDealTitle>WHO WE ARE</ThreeDealTitle>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={12}>
+                                    <ThreeDealText>
+                                        YOUR FULLY ASSEMBLED UA TEAM
+                                    </ThreeDealText>
+                                </Col>
+                                <Col md={6}>
+                                    <ThreeDealText style={{textAlign: 'left', lineHeight: '2.2em'}}>
+                                        We provide a fully-managed user acquisition service for game\app developers.
+                                        Since our founding, we have focused on two of the most important
+                                        pieces of the user acquisition puzzle - ROI and Value.
+                                    </ThreeDealText>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Hero>
+                </Particles>
             </WrapperThreeDeal>
         );
     }
