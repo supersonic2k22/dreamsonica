@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const WrapperThreeDeal = styled.div `
-  padding: 8em 0;
+  padding: 8em 0 0 0;
   box-shadow: 5px -21px 60px 45px white;
 `;
 

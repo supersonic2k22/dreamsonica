@@ -34,15 +34,21 @@ export default class CarouselComponent extends Component{
             slidesToScroll: 1,
             responsive: [
                 {
-                    breakpoint: 992,
+                    breakpoint: 1600,
                     settings: {
                         slidesToShow: 2,
                     }
                 },
                 {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 },

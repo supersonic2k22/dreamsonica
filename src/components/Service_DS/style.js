@@ -3,6 +3,9 @@ import styled from 'styled-components'
 export const WrapperService = styled.div `
   padding: 8em 0;
   background: white;
+  @media (max-width: 500px) {
+    padding: 4em;
+  }
 `;
 
 export const WrapperServiceContent = styled.div `
@@ -20,17 +23,19 @@ export const WrapperServiceContent = styled.div `
       .service_content_title {
         margin-bottom: 1.3em;
         font-size: 26px;
+        text-align: center;
       }
       .service_content_text {
         font-size: 1.3em;
       }
+      margin-bottom: 60px;
   }
 `;
 export const WrapperServiceDescription = styled.div `
   padding: 8em 0;
   background: white;
   border-radius: 2em;
-  box-shadow: 0 0 50px 20px silver;
+  box-shadow: 0 0 30px 0 silver;
   
   @media (max-width: 425px) {
       padding: 4em 0;
@@ -41,7 +46,7 @@ export const WrapperServiceDescription = styled.div `
 export const WrapperServiceCarousel = styled.div `
     padding: 0 4em;
     @media (max-width: 425px) {
-      padding: 0 2em;
+      padding: 0 0;
     }
 `;
 

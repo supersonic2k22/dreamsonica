@@ -46,11 +46,11 @@ const Card = ({ children }) => {
                         (window.scrollY || window.pageYOffset || document.body.scrollTop));
 
                 // Set animated values based on mouse position and card dimensions
-                const dampen = 50; // Lower the number the less rotation
+                const dampen = 230; // Lower the number the less rotation
                 const xys = [
                     -(y - ref.current.clientHeight / 2) / dampen, // rotateX
                     (x - ref.current.clientWidth / 2) / dampen, // rotateY
-                    1.07 // Scale
+                    1.03 // Scale
                 ];
 
                 // Update values to animate to
@@ -97,6 +97,23 @@ const GlobalFuture = () => {
                     </Row>
                 </Fade>
                 <Row justify={"center"}>
+                    <Col sm={12} md={3}>
+                        <Card>
+                            <GlobalFutureItem>
+                                <div className="future_item_header">
+                                    <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
+                                </div>
+                                <div className="future_item_footer">
+                                    <div>
+                                        <p className="future_item_footer--text">77</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                    </div>
+                                </div>
+                            </GlobalFutureItem>
+                        </Card>
+                    </Col>
                     <Col sm={12} md={3}>
                         <Card>
                             <GlobalFutureItem>

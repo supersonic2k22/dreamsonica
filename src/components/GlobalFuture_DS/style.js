@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 export const WrapperGlobalFuture = styled.div `
   padding: 10em 0;
+  @media (max-width: 500px) {
+      padding: 3em;
 `;
 
 export const GlobalFutureTitle  = styled.h2 `
@@ -27,7 +29,7 @@ export const GlobalFutureItem = styled.div `
   max-width: 250px;
   text-align: center;
   border-radius: 3em;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   box-shadow: 3px 10px 7px 2px rgba(0, 0, 0, 0.2);
   
   

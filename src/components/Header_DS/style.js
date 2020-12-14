@@ -76,7 +76,7 @@ export const WrapperNavbar = styled.div `
           width: 100%;
           max-width: 1540px;
           margin: 0 auto;
-          padding: 1em 1em;
+          padding: 0 1em;
           overflow: hidden;
         }
 `;

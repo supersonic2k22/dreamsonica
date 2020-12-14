@@ -54,8 +54,7 @@ export const CarouselCard = styled.div `
     padding: 0 18px;
   .carousel_item_img {
       width: 100%;
-      max-height: 100%;
-      height: 450px;
+      height: auto;
       border-radius: 30px;
   }
 `;

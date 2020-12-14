@@ -36,27 +36,27 @@ export default class ServiceDescription extends Component{
                     <Slider ref={c => (this.slider = c)} {...settings}>
                         <CarouselItem key={1}>
                             <div className="carousel_item_icon">
-                                <img src={require('../../static/images/sonica/logo/logo1.png')} alt=""/>
+                                <img style={{width: '100%', height: 'auto'}} src={require('../../static/images/sonica/logo/logo1.png')} alt=""/>
                             </div>
                         </CarouselItem>
                         <CarouselItem key={2}>
                             <div className="carousel_item_icon">
-                                <img src={require('../../static/images/sonica/logo/logo2.png')} alt=""/>
+                                <img style={{width: '100%', height: 'auto'}} src={require('../../static/images/sonica/logo/logo2.png')} alt=""/>
                             </div>
                         </CarouselItem>
                         <CarouselItem key={3}>
                             <div className="carousel_item_icon">
-                                <img src={require('../../static/images/sonica/logo/logo3.png')} alt=""/>
+                                <img style={{width: '100%', height: 'auto'}} src={require('../../static/images/sonica/logo/logo3.png')} alt=""/>
                             </div>
                         </CarouselItem>
                         <CarouselItem key={4}>
                             <div className="carousel_item_icon">
-                                <img src={require('../../static/images/sonica/logo/logo4.png')} alt=""/>
+                                <img style={{width: '100%', height: 'auto'}} src={require('../../static/images/sonica/logo/logo4.png')} alt=""/>
                             </div>
                         </CarouselItem>
                         <CarouselItem key={5}>
                             <div className="carousel_item_icon">
-                                <img src={require('../../static/images/sonica/logo/logo5.png')} alt=""/>
+                                <img style={{width: '100%', height: 'auto'}} src={require('../../static/images/sonica/logo/logo5.png')} alt=""/>
                             </div>
                         </CarouselItem>
                     </Slider>

@@ -15,7 +15,6 @@ import {
 } from 'react-scroll'
 
 export default class Home extends Component {
-
     componentDidMount() {
         Events.scrollEvent.register('begin', () => {
             return arguments;

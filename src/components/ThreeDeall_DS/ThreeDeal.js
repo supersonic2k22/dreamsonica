@@ -1,4 +1,4 @@
-import React, {createRef, Component, useRef, useState} from "react";
+import React, {createRef, Component} from "react";
 import {Container, Row, Col} from "react-grid-system";
 import {
     WrapperThreeDeal,
@@ -65,7 +65,7 @@ const Particles = ({ children }) => {
                     bottom: 0,
                     top: 0
                 }}
-                height={850}
+                height={700}
             />
             {children && <div style={{ position: 'relative' }}>{children}</div>}
         </div>
