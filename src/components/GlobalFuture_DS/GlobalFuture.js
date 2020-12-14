@@ -13,6 +13,7 @@ import {
 } from './style'
 import {ThreeDealText} from "../ThreeDeall_DS/style";
 import {animated, useSpring} from "react-spring";
+import Fade from "react-reveal/Fade";
 
 const Card = ({ children }) => {
     const ref = useRef();
@@ -79,20 +80,22 @@ const GlobalFuture = () => {
     return (
         <WrapperGlobalFuture>
             <Container>
-                <Row >
-                    <Col lg={12}>
-                        <GlobalFutureTitle>
-                            WHY CHOOSE US
-                        </GlobalFutureTitle>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col lg={12}>
-                        <ThreeDealText style={{alignText: 'center'}}>
-                            DreamSonica is a diverse team of talented, creative and thoughtful individuals, working together more 6 years. Whose expertise and experience in Game Marketing is trusted by the large and small game developers, already famous and startups.
-                        </ThreeDealText>
-                    </Col>
-                </Row>
+                <Fade bottom>
+                    <Row >
+                        <Col lg={12}>
+                            <GlobalFutureTitle>
+                                WHY CHOOSE US
+                            </GlobalFutureTitle>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg={12}>
+                            <ThreeDealText style={{alignText: 'center'}}>
+                                DreamSonica is a diverse team of talented, creative and thoughtful individuals, working together more 6 years. Whose expertise and experience in Game Marketing is trusted by the large and small game developers, already famous and startups.
+                            </ThreeDealText>
+                        </Col>
+                    </Row>
+                </Fade>
                 <Row justify={"center"}>
                     <Col sm={12} md={3}>
                         <Card>

@@ -91,15 +91,12 @@ export const CarouselBoxBtns = styled.div `
   }
 `;
 
-
 export const WrapperIcons = styled.div `
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
-
-   
   .workTogether_item {
     display: -webkit-box;
     display: -ms-flexbox;

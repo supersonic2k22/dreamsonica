@@ -2,8 +2,6 @@ import React from "react";
 import CarouselComponent from "./CarouselComponent";
 import {WrapperStuffShip} from "./style";
 
-
-
 import oneSlide from '../../static/images/sonica/clogo1.png'
 import twoSlide from '../../static/images/sonica/clogo2.png'
 import threeSlide from '../../static/images/sonica/clogo3.png'
@@ -27,7 +25,7 @@ const collectionStuff = [
 const Talent = () => {
     return (
         <WrapperStuffShip>
-            <CarouselComponent collectionSlider={ collectionStuff } />
+            <CarouselComponent className={''} collectionSlider={ collectionStuff } />
         </WrapperStuffShip>
     )
 }
