@@ -1,17 +1,21 @@
-import React, {useRef, useState} from "react";
-
+import React, {Component, useRef, useState} from "react";
+import Slider from 'react-slick';
 import {
     Container,
     Row,
-    Col
+    Col,
+    Visible,
+    Hidden
 } from "react-grid-system";
 
 import {
     WrapperGlobalFuture,
+    WrapperCarouselGlobal,
     GlobalFutureTitle,
+    GlobalFutureText,
     GlobalFutureItem
 } from './style'
-import {ThreeDealText} from "../ThreeDeall_DS/style";
+
 import {animated, useSpring} from "react-spring";
 import Fade from "react-reveal/Fade";
 
@@ -76,99 +80,179 @@ const Card = ({ children }) => {
     );
 }
 
-const GlobalFuture = () => {
-    return (
-        <WrapperGlobalFuture>
-            <Container>
-                <Fade bottom>
-                    <Row >
-                        <Col lg={12}>
-                            <GlobalFutureTitle>
-                                WHY CHOOSE US
-                            </GlobalFutureTitle>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col lg={12}>
-                            <ThreeDealText style={{alignText: 'center'}}>
-                                DreamSonica is a diverse team of talented, creative and thoughtful individuals, working together more 6 years. Whose expertise and experience in Game Marketing is trusted by the large and small game developers, already famous and startups.
-                            </ThreeDealText>
-                        </Col>
-                    </Row>
-                </Fade>
-                <Row justify={"center"}>
-                    <Col sm={12} md={3}>
-                        <Card>
-                            <GlobalFutureItem>
-                                <div className="future_item_header">
-                                    <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
-                                </div>
-                                <div className="future_item_footer">
-                                    <div>
-                                        <p className="future_item_footer--text">77</p>
+export default class GlobalFuture extends Component{
+
+    render() {
+
+        const settings = {
+            dots: false,
+            speed: 500,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 425,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        };
+
+        return (
+            <WrapperGlobalFuture>
+                <Container>
+                    <Fade bottom>
+                        <Row >
+                            <Col lg={12}>
+                                <GlobalFutureTitle>
+                                    WHY CHOOSE US
+                                </GlobalFutureTitle>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col lg={12}>
+                                <GlobalFutureText style={{alignText: 'center'}}>
+                                    DreamSonica is a diverse team of talented, creative and thoughtful individuals, working together more 6 years. Whose expertise and experience in Game Marketing is trusted by the large and small game developers, already famous and startups.
+                                </GlobalFutureText>
+                            </Col>
+                        </Row>
+                    </Fade>
+                    <Hidden xs sm md>
+                        <Row justify={"center"}>
+                            <Col sm={12} md={3}>
+                                <Card>
+                                    <GlobalFutureItem>
+                                        <div className="future_item_header">
+                                            <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
+                                        </div>
+                                        <div className="future_item_footer">
+                                            <div>
+                                                <p className="future_item_footer--text">77</p>
+                                            </div>
+                                            <div>
+                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                            </div>
+                                        </div>
+                                    </GlobalFutureItem>
+                                </Card>
+                            </Col>
+                            <Col sm={12} md={3}>
+                                <Card>
+                                    <GlobalFutureItem>
+                                        <div className="future_item_header">
+                                            <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
+                                        </div>
+                                        <div className="future_item_footer">
+                                            <div>
+                                                <p className="future_item_footer--text">77</p>
+                                            </div>
+                                            <div>
+                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                            </div>
+                                        </div>
+                                    </GlobalFutureItem>
+                                </Card>
+                            </Col>
+                            <Col sm={12} md={3}>
+                                <Card>
+                                    <GlobalFutureItem>
+                                        <div className="future_item_header">
+                                            <img src={require('../../static/images/done_ico.svg')} alt=""/>
+                                        </div>
+                                        <div className="future_item_footer">
+                                            <div>
+                                                <p className="future_item_footer--text">77</p>
+                                            </div>
+                                            <div>
+                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur something.</h3>
+                                            </div>
+                                        </div>
+                                    </GlobalFutureItem>
+                                </Card>
+                            </Col>
+                            <Col sm={12} md={3}>
+                                <Card>
+                                    <GlobalFutureItem>
+                                        <div className="future_item_header">
+                                            <img src={require('../../static/images/machine_point.svg')} alt=""/>
+                                        </div>
+                                        <div className="future_item_footer">
+                                            <div>
+                                                <p className="future_item_footer--text">99%</p>
+                                            </div>
+                                            <div>
+                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur something.</h3>
+                                            </div>
+                                        </div>
+                                    </GlobalFutureItem>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Hidden>
+                    <Visible xs sm md>
+                        <WrapperCarouselGlobal>
+                            <Slider {...settings}>
+                                <GlobalFutureItem >
+                                    <div className="future_item_header">
+                                        <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
                                     </div>
-                                    <div>
-                                        <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                    <div className="future_item_footer">
+                                        <div>
+                                            <p className="future_item_footer--text">77</p>
+                                        </div>
+                                        <div>
+                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                        </div>
                                     </div>
-                                </div>
-                            </GlobalFutureItem>
-                        </Card>
-                    </Col>
-                    <Col sm={12} md={3}>
-                        <Card>
-                            <GlobalFutureItem>
-                                <div className="future_item_header">
-                                    <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
-                                </div>
-                                <div className="future_item_footer">
-                                    <div>
-                                        <p className="future_item_footer--text">77</p>
+                                </GlobalFutureItem>
+                                <GlobalFutureItem>
+                                    <div className="future_item_header">
+                                        <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
                                     </div>
-                                    <div>
-                                        <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                    <div className="future_item_footer">
+                                        <div>
+                                            <p className="future_item_footer--text">77</p>
+                                        </div>
+                                        <div>
+                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                        </div>
                                     </div>
-                                </div>
-                            </GlobalFutureItem>
-                        </Card>
-                    </Col>
-                    <Col sm={12} md={3}>
-                        <Card>
-                            <GlobalFutureItem>
-                                <div className="future_item_header">
-                                    <img src={require('../../static/images/done_ico.svg')} alt=""/>
-                                </div>
-                                <div className="future_item_footer">
-                                    <div>
-                                        <p className="future_item_footer--text">77</p>
+                                </GlobalFutureItem>
+                                <GlobalFutureItem>
+                                    <div className="future_item_header">
+                                        <img src={require('../../static/images/done_ico.svg')} alt=""/>
                                     </div>
-                                    <div>
-                                        <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                                    <div className="future_item_footer">
+                                        <div>
+                                            <p className="future_item_footer--text">77</p>
+                                        </div>
+                                        <div>
+                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                                        </div>
                                     </div>
-                                </div>
-                            </GlobalFutureItem>
-                        </Card>
-                    </Col>
-                    <Col sm={12} md={3}>
-                        <Card>
-                            <GlobalFutureItem>
-                                <div className="future_item_header">
-                                    <img src={require('../../static/images/machine_point.svg')} alt=""/>
-                                </div>
-                                <div className="future_item_footer">
-                                    <div>
-                                        <p className="future_item_footer--text">99%</p>
+                                </GlobalFutureItem>
+                                <GlobalFutureItem>
+                                    <div className="future_item_header">
+                                        <img src={require('../../static/images/machine_point.svg')} alt=""/>
                                     </div>
-                                    <div>
-                                        <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                    <div className="future_item_footer">
+                                        <div>
+                                            <p className="future_item_footer--text">99%</p>
+                                        </div>
+                                        <div>
+                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                        </div>
                                     </div>
-                                </div>
-                            </GlobalFutureItem>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
-        </WrapperGlobalFuture>
-    )
+                                </GlobalFutureItem>
+                            </Slider>
+                        </WrapperCarouselGlobal>
+                    </Visible>
+                </Container>
+            </WrapperGlobalFuture>
+        )
+    }
 }
 
-export default GlobalFuture;

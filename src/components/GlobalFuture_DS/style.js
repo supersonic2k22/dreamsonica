@@ -7,6 +7,26 @@ export const WrapperGlobalFuture = styled.div `
       padding: 3em;
 `;
 
+export const WrapperCarouselGlobal = styled.div `
+
+  .slick-slide {
+    padding: 0 20px;
+  }
+  .slick-slide img {
+    display: initial;
+  }
+  @media (max-width: 576px) {
+    .slick-slide {
+      padding: 0 10px;
+    }
+  }
+  @media (max-width: 320px) {
+    .slick-slide {
+      padding: 0 5px;
+    }
+  }
+`;
+
 export const GlobalFutureTitle  = styled.h2 `
     font-size: calc(.024 * 100vw);
     font-weight: 600;
@@ -19,12 +39,18 @@ export const GlobalFutureTitle  = styled.h2 `
     }
 `;
 
+export const GlobalFutureText = styled.p `
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 1.4em;
+`;
+
 export const GlobalFutureItem = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 450px;
+  height: 100%;
   width: 100%;
   max-width: 250px;
   text-align: center;
@@ -73,9 +99,15 @@ export const GlobalFutureItem = styled.div `
       @media (max-width: 1024px) {
         .future_item_footer {
           padding-top: 2em;
+        }
       }
+      
+      @media (max-width: 991px) {
+        max-width: 100%;
       }
+  
       @media (max-width: 768px) {
+        
         .future_item_footer {
           padding-top: 1.5em;
       }
