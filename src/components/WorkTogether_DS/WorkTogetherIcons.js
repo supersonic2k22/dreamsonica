@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import InfoItemElement from "./infoItemEelement";
-import {Col, Hidden} from "react-grid-system";
+import { Hidden } from "react-grid-system";
 import {WrapperIcons} from './style';
 
 import doneIcon from '../../static/images/done_ico.svg';
 import scratchIcon from '../../static/images/build_from_scratch_ico.svg';
 import machinePoint from '../../static/images/machine_point.svg';
-import Slider from "react-slick";
+
 
 export default class WorkTogetherIcons extends Component {
     render() {

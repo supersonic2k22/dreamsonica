@@ -24,7 +24,7 @@ const FooterPrivacy = () => {
                     </Col>
                     <Col md={12} lg={4}>
                         <PrivacyPrivateFooter>
-                            <a className="private_link" href="#" target="_blank" style={{margin: 'auto'}}>Privacy Private</a>
+                            <a className="private_link" href="#" target="_blank" >Privacy Private</a>
                         </PrivacyPrivateFooter>
                     </Col>
                 </Row>

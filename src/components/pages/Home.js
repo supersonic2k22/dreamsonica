@@ -14,13 +14,28 @@ import {
     scroller,
 } from 'react-scroll'
 
+
+
+
+
 export default class Home extends Component {
+
+    state = {
+        loading: true
+    }
+
     componentDidMount() {
         Events.scrollEvent.register('begin', () => {
             return arguments;
         });
         Events.scrollEvent.register('end', () => {
             return arguments;
+        })
+
+        this.fakeRequest().then(() => {
+            return this.setState({
+                loading: false
+            })
         })
     }
 
@@ -32,15 +47,25 @@ export default class Home extends Component {
         })
     }
 
+
+
+    fakeRequest = () => {
+        return new Promise(resolve => setTimeout(()=>resolve(), 3500))
+    }
+
     componentWillUnmount() {
         Events.scrollEvent.remove('begin');
         Events.scrollEvent.remove('end');
     }
 
     render() {
+
+        if(this.state.loading) {
+            return <Sugar color={'orangered'} time={3000}/>
+        }
+
         return (
             <ScreenClassProvider>
-                <Sugar  color={'orangered'} time={4000}/>
                     <Header toScroll={this.scrollTo} />
                     <ThreeDeal/>
                     <GlobalFuture/>

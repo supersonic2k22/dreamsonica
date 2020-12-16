@@ -10,12 +10,10 @@ const ContactForm = () =>{
         initialValues: {
             text: '',
             firstName: '',
-            secondName: '',
             email: '',
-            phone: '',
             acceptedTerms: false
         },
-        onSubmit: async (values, {setSubmitting, }) => {
+        onSubmit: async (values, {setSubmitting}) => {
             setSubmitting(false);
             alert(JSON.stringify(values, null, 2))
         },
@@ -33,7 +31,7 @@ const ContactForm = () =>{
                             <input className="form_input input_first-name"
                                    type="text"
                                    name="firstName"
-                                   style={{width: '90%' , border: 'none', marginBottom: '2em',padding: "1em 0 1.5em 1em", fontSize:"1.2em",borderBottom: '1px solid grey'}}
+                                   style={{width: '100%' , border: 'none', marginBottom: '2em',padding: "1em 0 1.5em 1em", fontSize:"1.2em",borderBottom: '1px solid grey'}}
                                    placeholder={'Your name'}
                                    onChange={formik.handleChange}
                                    onBlur={formik.handleBlur}
@@ -51,14 +49,14 @@ const ContactForm = () =>{
                             <textarea className="form_input input_textarea"
                                       name="text"
                                       placeholder={'Message'}
-                                      style={{ width: '100%' , marginBottom: '1.5em',padding: "1em 0 4em 1em", fontSize:"1.5em", border: 'none', borderBottom: '1px solid grey'}}
+                                      style={{ width: '100%' , marginBottom: '1.5em',padding: "1em 0 4em 1em", fontSize:"1.2em", border: 'none', borderBottom: '1px solid grey'}}
                                       onChange={formik.handleChange}
                                       onBlur={formik.handleBlur}
                                       value={formik.values.text}
                             >
                             </textarea>
                             <Checkbox name="acceptedTerms"
-                                    style={{marginTop: '3em', fontSize: '1.2em'}}
+                                      style={{marginTop: '3em', fontSize: '1.2em'}}
                                       onChange={formik.handleChange}
                                       onBlur={formik.handleBlur}
                                       >

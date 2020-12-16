@@ -8,7 +8,7 @@ import {
 import WorkTogetherIcons from "./WorkTogetherIcons";
 import {Col, Row} from "react-grid-system";
 
-export default class WorkTogetherCarousel extends React.Component{
+export default class WorkTogetherCarousel extends Component{
 
     state = {
         activeSlide: false,
@@ -58,7 +58,6 @@ export default class WorkTogetherCarousel extends React.Component{
                                 </CarouselCard>
                             </Slider>
                         </Col>
-
                         <Col md={5} xl={5}>
                             <WorkTogetherIcons goToSlide={slideNum => this.slider.slickGoTo(slideNum)}/>
                         </Col>
