@@ -32,14 +32,57 @@ export const WrapperServiceContent = styled.div `
   }
 `;
 export const WrapperServiceDescription = styled.div `
-  padding: 8em 0;
+  padding: 4em 0;
   background: white;
   border-radius: 2em;
   box-shadow: 0 0 30px 0 silver;
-  
+
+
+  .slick-prev,
+  .slick-next {
+    background: transparent;
+
+  }
+
+  .slick-prev {
+    left: -40px;
+    z-index: 10;
+  }
+
+  .slick-next {
+    right: -20px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 38px;
+    line-height: 1;
+    opacity: 1;
+    color: #fa7107;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 lightslategray;
+    transition: .7s;
+  }
+
+  .slick-next:hover:before,
+  .slick-prev:hover:before {
+    color: #b04900;
+  }
+
+
+  @media (max-width: 991px) {
+    padding: 1em 0;
+  }
   @media (max-width: 425px) {
-      padding: 4em 0;
+    .slick-next {
+      right: -30px;
     }
+
+    .slick-next:before,
+    .slick-prev:before {
+      font-size: 28px;
+    }
+  }
 `;
 
 
@@ -51,8 +94,6 @@ export const WrapperServiceCarousel = styled.div `
 `;
 
 export const CarouselItem = styled.div `
-  
-  
   .carousel_item_icon img {
     margin: 0 auto;
     margin-bottom: 2em;
@@ -70,8 +111,8 @@ export const CarouselItem = styled.div `
       .carousel_item_title {
         font-size: 22px;
       }
-      
   }
 `;
+
 
 

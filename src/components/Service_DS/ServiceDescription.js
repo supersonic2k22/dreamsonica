@@ -1,11 +1,13 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
+import { LeftOutlined, RightOutlined} from '@ant-design/icons';
 import {
     WrapperServiceDescription,
     WrapperServiceCarousel,
     CarouselItem,
-
 } from './style'
+
+
 
 export default class ServiceDescription extends Component{
 
@@ -20,9 +22,8 @@ export default class ServiceDescription extends Component{
     render() {
 
         const settings = {
-            dots: true,
+            dots: false,
             fade: true,
-            arrows: false,
             speed: 500,
             infinite: true,
             autoplay: true,
