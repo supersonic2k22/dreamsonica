@@ -1,13 +1,9 @@
 import styled from 'styled-components'
 
-
-
 export const WrapperFrom = styled.div `
   padding: 4em 0;
   font-family: Montserrat;
   
- 
- 
   .form_input:focus {
     outline: none;
   }

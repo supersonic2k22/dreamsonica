@@ -1,8 +1,23 @@
 import styled from "styled-components";
 
 export const WrapperThreeDeal = styled.div `
+  position: relative;
   padding: 8em 0 0 0;
   box-shadow: 5px -21px 60px 45px white;
+  width: 100%;
+  height: 100%;
+
+  :after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    background: RGBA(252,252,255,.75);
+    z-index: -1;
+  }
 `;
 
 export const ThreeDealTitle = styled.h2 `

@@ -11,7 +11,7 @@ import machinePoint from '../../static/images/machine_point.svg';
 export default class WorkTogetherIcons extends Component {
     render() {
 
-        const { goToSlide } = this.props;
+        const { goToSlide, toScroll } = this.props;
 
         return (
             <WrapperIcons >
@@ -37,7 +37,7 @@ export default class WorkTogetherIcons extends Component {
                     />
                 </div>
                 <Hidden xs sm md lg>
-                    <InfoItemElement/>
+                    <InfoItemElement toScroll={toScroll}/>
                 </Hidden>
             </WrapperIcons>
         );

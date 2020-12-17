@@ -85,6 +85,7 @@ export default class GlobalFuture extends Component{
     render() {
 
         const settings = {
+            arrows: false,
             dots: false,
             speed: 500,
             infinite: true,

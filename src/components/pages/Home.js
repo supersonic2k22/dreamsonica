@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScreenClassProvider } from "react-grid-system";
+import {Col, Hidden, Row, ScreenClassProvider, Visible} from "react-grid-system";
 import Header from "../Header_DS/Header";
 import ThreeDeal from "../ThreeDeall_DS";
 import WorkTogetherContent from "../WorkTogether_DS";
@@ -7,51 +7,46 @@ import FullStaff from "../FullStaff_DS";
 import Service from "../Service_DS";
 import GlobalFuture from "../GlobalFuture_DS";
 import Form from "../Form_DS";
-import Footer from "../Footer_DS";
-import { Sugar } from 'react-preloaders';
 import  gifLoader  from '../../static/video/right-left.gif.gif';
-import {
-    Events,
-    scroller,
-} from 'react-scroll'
+import ReactPageScroller from "react-page-scroller";
+
 
 export default class Home extends Component {
 
     state = {
-        loading: true
+        loading: true,
+        currentPage: 0
     }
 
-    componentDidMount() {
-        Events.scrollEvent.register('begin', () => {
-            return arguments;
-        });
-        Events.scrollEvent.register('end', () => {
-            return arguments;
-        })
 
+    componentDidMount() {
         this.fakeRequest().then(() => {
             return this.setState({
                 loading: false
             })
         })
+
+        this.handlePageChange();
     }
 
-    scrollTo = (id) => {
-        scroller.scrollTo(id, {
-            duration: 1800,
-            delay: 150,
-            smooth: 'easeInSine'
-        })
-    }
 
     fakeRequest = () => {
         return new Promise(resolve => setTimeout(()=>resolve(), 2000))
     }
+    handlePageChange = number => {
+
+
+        this.setState(()=> {
+            return {
+                currentPage: number
+            }
+        });
+        console.log(number)
+    };
 
     componentWillUnmount() {
-        Events.scrollEvent.remove('begin');
-        Events.scrollEvent.remove('end');
         this.fakeRequest().then(null)
+        this.handlePageChange();
     }
 
     render() {
@@ -79,14 +74,18 @@ export default class Home extends Component {
 
         return (
             <ScreenClassProvider>
-                    <Header toScroll={this.scrollTo} />
+                <ReactPageScroller
+                    renderAllPagesOnFirstRender
+                    customPageNumber={this.state.currentPage}
+                >
+                    <Header toScroll={this.handlePageChange} />
                     <ThreeDeal/>
                     <GlobalFuture/>
-                    <WorkTogetherContent/>
+                    <WorkTogetherContent toScroll={this.handlePageChange}/>
                     <Service/>
                     <FullStaff/>
                     <Form/>
-                    <Footer/>
+                </ReactPageScroller>
             </ScreenClassProvider>
         );
     }

@@ -1,7 +1,6 @@
 import React from "react";
 import ServiceContent from "./ServiceContent";
 import ServiceDescription from "./ServiceDescription";
-import { Element } from 'react-scroll'
 import {
     Container,
     Row,
@@ -17,7 +16,6 @@ const Service = () => {
 
     return (
         <WrapperService>
-            <Element id="service"/>
                 <Container>
                 <Row>
                     <Col lg={6} style={{alignSelf: "center"}}>

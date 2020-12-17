@@ -1,5 +1,5 @@
 import React from "react";
-
+import {pages} from '../../configs/app.config'
 import {
     Col,
     Row
@@ -13,9 +13,8 @@ import {
 
 
 const Promo = ({toScroll}) => {
-
     return (
-        <WrapperPromo>
+        <WrapperPromo className={'promo'}>
             <Row>
                 <Col md={12} xl={10}>
                     <PromoTitle>
@@ -30,7 +29,7 @@ const Promo = ({toScroll}) => {
                         at aut dicta ex exercitationem ipsam labore laborum minima modi
                         odit optio perferendis quos vitae! Culpa?
                     </PromoText>
-                    <PromoButton  onClick={()=> toScroll('same')}>
+                    <PromoButton  onClick={()=> toScroll(pages.contact)}>
                         Let's Talk
                     </PromoButton>
                 </Col>

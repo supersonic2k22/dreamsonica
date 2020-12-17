@@ -1,24 +1,17 @@
 import React from "react";
-import {
-    scroller
-} from 'react-scroll'
+import {pages} from '../../configs/app.config'
+
 import {
  WorkTogetherIconBtn
 } from './style'
 
-const scrollTo = (id) => {
-    scroller.scrollTo(id, {
-        duration: 1800,
-        delay: 300,
-        smooth: 'easeInCirc'
-    })
-}
 
-const InfoItemElement = () => {
+
+const InfoItemElement = ({toScroll}) => {
 
     return (
         <div className="workTogether_item">
-            <WorkTogetherIconBtn onClick={() => scrollTo('same')}>
+            <WorkTogetherIconBtn onClick={() => toScroll(pages.contact)}>
                 Let's Talk
             </WorkTogetherIconBtn>
         </div>

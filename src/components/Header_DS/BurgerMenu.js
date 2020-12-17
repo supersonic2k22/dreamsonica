@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {slide as Menu} from 'react-burger-menu';
+import {pages} from '../../configs/app.config'
 import "./styleBurger.css"
 import {
 
@@ -29,23 +30,23 @@ export default class BurgerMenu extends Component{
                   onStateChange={(state) => {this.handleStateChange(state)}}>
                     <p id="home"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('workflow')}>
+                       onClick={()=>this.burgerLinkClick(pages.tips)}>
                         WORKFLOW
                     </p>
                     <p id="expertise"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('power_team')}
+                       onClick={()=>this.burgerLinkClick(pages.workFlow)}
                         >
                         POWER TEAM
                     </p>
                     <p id="service_fa"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('service')}>
+                       onClick={()=>this.burgerLinkClick(pages.privilege)}>
                         SERVICE
                     </p>
                     <p id="contact"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('same')}>
+                       onClick={()=>this.burgerLinkClick(pages.contact)}>
                         CONTACT US
                     </p>
             </Menu>

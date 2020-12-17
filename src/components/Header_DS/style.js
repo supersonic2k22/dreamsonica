@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const WrapperPlayer = styled.div `
   position: relative;
   width: 100%;
-  height: 100%; 
-  padding: 0 1em;
+  height: 100%;
   
   :after {
   content: '';
@@ -30,8 +29,7 @@ export const WrapperPlayer = styled.div `
 }
 `;
 export const WrapperPromo = styled.div `
-  font-family: Montserrat;
-  padding: 15em 0 6em 0;
+  padding: 30em 0 6em 0;
 `;
 
 export const PromoTitle = styled.h1 `

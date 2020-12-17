@@ -21,6 +21,7 @@
     "react-gif-loader": "^0.6.0",
     "react-grid-system": "^7.1.1",
     "react-infinite-scroller": "^1.2.4",
+    "react-page-scroller": "^2.0.11-beta",
     "react-particles-js": "^3.4.1",
     "react-player": "^2.7.0",
     "react-preloaders": "^3.0.3",

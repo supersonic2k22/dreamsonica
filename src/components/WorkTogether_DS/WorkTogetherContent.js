@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import WorkTogetherCarousel from "./WorkTogetherCarousel";
 import InfoItemElement from "./infoItemEelement";
-import {Element} from 'react-scroll'
 import {
     Container,
     Row,
@@ -15,11 +14,13 @@ import {
     HelperElement
 } from './style';
 
-export default class ciWorkTogetherContent extends Component {
+export default class WorkTogetherContent extends Component {
     render() {
+
+        const { toScroll } = this.props
+
         return (
             <Wrapper>
-                <Element id="workflow"/>
                 <Container>
                     <Fade bottom>
                         <Row>
@@ -34,10 +35,10 @@ export default class ciWorkTogetherContent extends Component {
                     <ScreenClassRender render={ screenClass => (
                         <Row style={{flexDirection:['xs', 'sm', 'md', 'lg'].includes(screenClass) ? 'column-reverse' : ''}}>
                             <Col xl={12} style={{alignSelf: "center"}}>
-                                <WorkTogetherCarousel/>
+                                <WorkTogetherCarousel toScroll={toScroll}/>
                                 <Visible xs sm md lg>
                                     <HelperElement>
-                                        <InfoItemElement/>
+                                        <InfoItemElement toScroll={toScroll}/>
                                     </HelperElement>
                                 </Visible>
                             </Col>

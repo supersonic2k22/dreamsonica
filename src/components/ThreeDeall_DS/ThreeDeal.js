@@ -65,7 +65,7 @@ const Particles = ({ children }) => {
                     bottom: 0,
                     top: 0
                 }}
-                height={700}
+                height={'100%'}
             />
             {children && <div style={{ position: 'relative' }}>{children}</div>}
         </div>

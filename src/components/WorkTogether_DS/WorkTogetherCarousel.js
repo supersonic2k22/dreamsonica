@@ -27,6 +27,7 @@ export default class WorkTogetherCarousel extends Component{
             afterChange: (current, next) => { this.setState({activeSlide: next})},
         };
 
+        const {toScroll} = this.props
         return (
                 <WrapperCarousel>
                     <Row>
@@ -59,7 +60,7 @@ export default class WorkTogetherCarousel extends Component{
                             </Slider>
                         </Col>
                         <Col md={5} xl={5}>
-                            <WorkTogetherIcons goToSlide={slideNum => this.slider.slickGoTo(slideNum)}/>
+                            <WorkTogetherIcons goToSlide={slideNum => this.slider.slickGoTo(slideNum)} toScroll={toScroll}/>
                         </Col>
                     </Row>
                 </WrapperCarousel>

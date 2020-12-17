@@ -33,7 +33,7 @@ class Header extends Component{
     componentDidMount() {
         this.updatePlayer()
         window.addEventListener('scroll', this.handleScroll);
-        window.addEventListener('scroll', this.fillNavbar)
+        window.addEventListener('scroll', this.fillNavbar);
     }
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
@@ -47,6 +47,8 @@ class Header extends Component{
     }
 
     handleScroll = () => {
+        console.log('scroll');
+
         const { scrollPos } = this.state;
 
         this.setState({
@@ -76,7 +78,7 @@ class Header extends Component{
         const { toScroll } = this.props;
 
         return (
-            <WrapperPlayer>
+            <WrapperPlayer className={"wrapper-player"}>
                 <ReactPlayer
                     className='react-player'
                     url={[
@@ -86,6 +88,7 @@ class Header extends Component{
                     loop={true}
                     playsinline={true}
                     valume="true"
+                    style={{position: 'absolute'}}
                     muted={true}
                     width='100%'
                     height='100%'
@@ -110,9 +113,7 @@ class Header extends Component{
                             </div>
                         </WrapperNavbar>
                     </TransitionNavbar>
-                    <Row>
-                        <Promo toScroll={toScroll}/>
-                    </Row>
+                    <Promo toScroll={toScroll}/>
                 </Container>
             </WrapperPlayer>
         );

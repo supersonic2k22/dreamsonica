@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const WrapperFooter = styled.div `
-
+  margin-top: 70px;
 `;
 
 export const WrapperFooterContent = styled.div `
