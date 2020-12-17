@@ -47,6 +47,59 @@ export const WrapperStuffShip = styled.div `
 `;
 export const WrapperCarousel = styled.div `
 
+  .slick-prev,
+  .slick-next {
+    background: transparent;
+  }
+
+  .slick-prev {
+    left: -40px;
+    z-index: 10;
+  }
+
+  .slick-next {
+    right: -20px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 38px;
+    line-height: 1;
+    opacity: 1;
+    color: #1890ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 lightslategray;
+    transition: .7s;
+  }
+
+  .slick-next:hover:before,
+  .slick-prev:hover:before {
+    color: #fa7107;
+  }
+  
+  @media(max-width: 1024px){
+    .slick-prev {
+      left: -20px;
+    }
+    .slick-next {
+      right: -7px;
+    }
+  }
+  @media(max-width: 768px){
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 15px;
+    }
+  }
+  @media (max-width: 425px) {
+    
+    .slick-next:before,
+    .slick-prev:before {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const CarouselCard = styled.div `
@@ -59,32 +112,3 @@ export const CarouselCard = styled.div `
   }
 `;
 
-export const CarouselBoxBtns = styled.div `
-  margin-top: 1em;
-  text-align: center;
-  
-  .carousel_btn_pre,
-  .carousel_btn_next{
-    width: 45px;
-    height: 45px;
-    background: white;
-    border: 1px solid slategray;
-    border-radius: 50%;
-    color: slategray;
-    cursor:pointer;
-    transition-duration: .78s;
-    
-  }
-  .carousel_btn_pre:first-child {
-   margin-right: 5px;
-  }
-  .carousel_btn_pre:focus,
-  .carousel_btn_next:focus{
-     outline: none;
-  }
-  .carousel_btn_pre:hover,
-  .carousel_btn_next:hover{
-     color: orange;
-     border-color: orange;
-  }
-`;

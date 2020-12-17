@@ -90,6 +90,9 @@ export default class GlobalFuture extends Component{
             infinite: true,
             slidesToShow: 2,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            cssEase: "linear",
             responsive: [
                 {
                     breakpoint: 425,

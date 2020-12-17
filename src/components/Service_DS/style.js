@@ -41,7 +41,6 @@ export const WrapperServiceDescription = styled.div `
   .slick-prev,
   .slick-next {
     background: transparent;
-
   }
 
   .slick-prev {
