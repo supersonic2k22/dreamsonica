@@ -9,11 +9,9 @@ export const WrapperLogoHeader = styled.div `
     max-height: 100px;
   }
   
-  
-  
-  @media(max-width: 768px){
-    .footer_logo {
-      margin-left: 0;
+  @media(max-width: 375px){
+    img {
+      max-width: 250px;
     }
   }
 `;

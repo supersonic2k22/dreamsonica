@@ -1,6 +1,5 @@
 import React from "react";
 import { useFormik, } from "formik";
-import {Element} from 'react-scroll'
 import {Checkbox} from 'antd';
 import {Container, Row, Col} from "react-grid-system";
 import {WrapperFrom} from './style';
@@ -23,7 +22,6 @@ const ContactForm = () =>{
 
     return (
         <WrapperFrom>
-            <Element id='same'/>
             <Container>
                 <Row align={"center"} justify={"center"}>
                     <Col lg={7}>
@@ -57,7 +55,7 @@ const ContactForm = () =>{
                             >
                             </textarea>
                             <Checkbox name="acceptedTerms"
-                                      style={{marginTop: '3em', fontSize: '1.2em'}}
+                                      style={{ fontSize: '1.2em'}}
                                       onChange={formik.handleChange}
                                       onBlur={formik.handleBlur}
                                       >

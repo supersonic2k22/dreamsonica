@@ -12,6 +12,10 @@ export const WrapperFooterPrivacy = styled.div `
   padding: 4em 0;
   background: #636363;
   color: #ccc;
+
+  @media(max-width: 1199px) {
+    padding: 2em 0;
+  }
 `;
 export const WrapperLogoFooter = styled.div `
   display: flex;
@@ -19,7 +23,6 @@ export const WrapperLogoFooter = styled.div `
   align-content: center;
   @media(max-width: 991px) {
     justify-content: center;
-    padding-bottom: 2em;
   }
 `;
 

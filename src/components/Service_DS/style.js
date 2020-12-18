@@ -3,6 +3,14 @@ import styled from 'styled-components'
 export const WrapperService = styled.div `
   padding: 8em 0;
   background: white;
+  
+  @media (max-width: 1199px) {
+    padding-top: 14em;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 10em;
+  }
   @media (max-width: 500px) {
     padding: 4em;
   }
@@ -18,6 +26,9 @@ export const WrapperServiceContent = styled.div `
   .service_content_text {
     font-size: 1.7em;
     line-height: 1.5;
+  }
+  @media (max-width: 991px) {
+    margin-bottom: 3em;
   }
   @media (max-width: 768px) {
       .service_content_title {
@@ -94,6 +105,8 @@ export const WrapperServiceCarousel = styled.div `
 
 export const CarouselItem = styled.div `
   .carousel_item_icon img {
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 2em;
   }
@@ -110,6 +123,11 @@ export const CarouselItem = styled.div `
       .carousel_item_title {
         font-size: 22px;
       }
+  }
+  @media (max-width: 991px) {
+    .carousel_item_icon img {
+      max-height: 450px;
+    }
   }
 `;
 

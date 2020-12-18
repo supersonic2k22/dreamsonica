@@ -36,7 +36,7 @@ export const WrapperFrom = styled.div `
   .form_submit_btn:focus {
   outline: none;
   }
-  @media(max-width: 992px) {
+  @media(max-width: 991px) {
     .input_textarea {
       padding-bottom: 2em !important;
     }
@@ -53,6 +53,8 @@ export const WrapperFrom = styled.div `
     }
   }
   @media(max-width: 375px) {
+    padding-top: 2em;
+    
     .form_title {
       font-size: 20px !important;
     }

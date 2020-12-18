@@ -6,6 +6,7 @@ import {
     ThreeDealText, HeroWrap, HeroBody
 } from './style';
 import ReactParticles from "react-particles-js";
+import Fade from "react-reveal/Fade";
 
 const params = {
     particles: {
@@ -20,7 +21,7 @@ const params = {
             value: '#000'
         },
         opacity: {
-            value: 0.8,
+            value: 1,
             random: false,
             anim: {
                 enable: false,
@@ -89,25 +90,27 @@ export default class ThreeDeal extends Component {
                 <Particles>
                     <Hero>
                         <Container>
-                            <Row>
-                                <Col lg={12}>
-                                    <ThreeDealTitle>WHO WE ARE</ThreeDealTitle>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col md={12}>
-                                    <ThreeDealText>
-                                        YOUR FULLY ASSEMBLED UA TEAM
-                                    </ThreeDealText>
-                                </Col>
-                                <Col md={6}>
-                                    <ThreeDealText style={{textAlign: 'left', lineHeight: '2.2em'}}>
-                                        We provide a fully-managed user acquisition service for game\app developers.
-                                        Since our founding, we have focused on two of the most important
-                                        pieces of the user acquisition puzzle - ROI and Value.
-                                    </ThreeDealText>
-                                </Col>
-                            </Row>
+                            <Fade bottom>
+                                <Row>
+                                    <Col lg={12}>
+                                        <ThreeDealTitle>WHO WE ARE</ThreeDealTitle>
+                                    </Col>
+                                </Row>
+                                <Row justify={"center"}>
+                                    <Col md={12}>
+                                        <ThreeDealText>
+                                            YOUR FULLY ASSEMBLED UA TEAM
+                                        </ThreeDealText>
+                                    </Col>
+                                    <Col  md={12} lg={10} >
+                                        <ThreeDealText style={{textAlign: 'center'}}>
+                                            We provide a fully-managed user acquisition service for game\app developers.
+                                            Since our founding, we have focused on two of the most important
+                                            pieces of the user acquisition puzzle - ROI and Value.
+                                        </ThreeDealText>
+                                    </Col>
+                                </Row>
+                            </Fade>
                         </Container>
                     </Hero>
                 </Particles>

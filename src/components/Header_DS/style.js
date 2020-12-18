@@ -13,7 +13,7 @@ export const WrapperPlayer = styled.div `
   width: 100%;
   height: 100%;
   visibility: visible;
-  background: RGBA(252,252,255,.75);
+  background: RGBA(252,252,255,.85);
   z-index: -10;
   }
   
@@ -29,35 +29,60 @@ export const WrapperPlayer = styled.div `
 }
 `;
 export const WrapperPromo = styled.div `
-  padding: 30em 0 6em 0;
+  padding: 23em 0 6em 0;
+
+  @media( max-width: 425px) {
+    padding-top: 20em;
+  }
+  @media( max-width: 375px) {
+    padding-top: 12em;
+  }
 `;
 
 export const PromoTitle = styled.h1 `
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
+  
+  @media( max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const PromoText = styled.p `
   padding-right: 3em;
-  margin-bottom: 3em;
-  font-size: 1.4em;
+  margin-bottom: 5em;
+  font-size: 1.5em;
+  
+  
+  @media( max-width: 991px) {
+    text-align: center;
+    padding-right: 0;
+  }
 `;
 
-export const PromoButton = styled.a `
-  padding: 17px 75px;
-  background: #f7941d;
-  border-radius: 5em;
-  font-size: 1.3em;
-  font-weight: 600;
-  border: 2px solid orange;
-  color: white;
-  transition: .4s;
-  :hover {
-  background: transparent;
-  transform: translateX(10px);
-  color: orange;
+export const PromoButton = styled.div `
+        
+   .promo_btn {
+     padding: 17px 75px;
+     background: #f7941d;
+     border-radius: 5em;
+     font-size: 1.3em;
+     font-weight: 600;
+     border: 2px solid orange;
+     color: white;
+     transition: .4s;
+     cursor: pointer;
+   }     
+  .promo_btn:hover {
+    background: transparent;
+    transform: translateX(10px);
+    color: orange;
+  }
+  
+  @media( max-width: 991px) {
+    text-align: center;
   }
   @media(max-width: 425px) {
       padding: 1em 2.5em;
@@ -81,13 +106,13 @@ export const WrapperNavbar = styled.div `
 export const TransitionNavbar = styled.div `
   .active {
     visibility: visible;
-    transition: all 200ms ease-in;
+    transition: all 400ms ease-in;
     background:${props => props.pointStyle ? 'RGBA(252,252,255,1)' : 'transparent'};
     box-shadow:${props => props.pointStyle ? '0 4px 12px 0px rgba(0, 0, 0, 0.2)' : ''};
   }
   .hidden {
     visibility: hidden;
-    transition: all 200ms ease-out;
+    transition: all 400ms ease-out;
     transform: translate(0, -100%);
   }
 `;

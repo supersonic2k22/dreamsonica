@@ -15,12 +15,13 @@ export const WrapperThreeDeal = styled.div `
     width: 100%;
     height: 100%;
     visibility: visible;
-    background: RGBA(252,252,255,.75);
+    background: RGBA(252,252,255,.7);
     z-index: -1;
   }
 `;
 
 export const ThreeDealTitle = styled.h2 `
+  margin-bottom: 1.5em;
   text-align: center;
   font-size: 45px;
   font-weight: 700;
@@ -37,6 +38,11 @@ export const ThreeDealText = styled.p `
   margin-bottom: 60px;
   text-align: center;
   font-size: 1.4em;
+  line-height: 2.2em;
+  
+  @media(max-width: 375px){
+    margin-bottom: 30px;
+  }
 `;
 
 export const HeroWrap = styled.div `

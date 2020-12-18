@@ -23,15 +23,16 @@ const Promo = ({toScroll}) => {
                 </Col>
             </Row>
             <Row>
-                <Col md={12} xl={10}>
+                <Col  xl={12}>
                     <PromoText>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
                         at aut dicta ex exercitationem ipsam labore laborum minima modi
                         odit optio perferendis quos vitae! Culpa?
                     </PromoText>
-                    <PromoButton  onClick={()=> toScroll(pages.contact)}>
-                        Let's Talk
+                    <PromoButton  >
+                        <button className='promo_btn' onClick={()=> toScroll(pages.contact)}>Let's Talk</button>
                     </PromoButton>
+
                 </Col>
             </Row>
         </WrapperPromo>

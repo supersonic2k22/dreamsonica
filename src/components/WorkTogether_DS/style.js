@@ -7,19 +7,28 @@ export const Wrapper = styled.div`
   
   
   .content_title {
-  margin-bottom: 1.5em;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 1;
-
+      margin-bottom: 1.5em;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1;
+  }
+  @media (max-width: 1024px) {
+    padding-bottom: 13em;
+    .content_title {
+      margin-bottom: 3.5em;
+    }
+  }
+  @media (max-width: 1199px) {
+    padding-bottom: 15em;
   }
   @media (min-width: 768px) {
     .content_title {
       font-size: calc(.0333 * 100vw);
     }
   }
-  @media (max-width: 1024px) {
-      padding: 4em;
+  @media (min-width: 375px) {
+    padding-top: 4em;
+  }
 `;
 
 export const HelperElement = styled.div `
@@ -39,12 +48,9 @@ export const WrapperCarousel = styled.div `
   @media(max-width: 1199px) {
     margin-bottom: 2em;
   }
-  
 `;
 
 export const CarouselCard = styled.div `
-  
-  
   .carousel_card_title{
     font-size: calc(.01606*100vw);
     font-weight: 600;
@@ -61,36 +67,7 @@ export const CarouselCard = styled.div `
   }
 `;
 
-export const CarouselBoxBtns = styled.div `
-  margin-top: 1em;
-  
-  .carousel_btn_pre,
-  .carousel_btn_next{
-    width: 45px;
-    height: 45px;
-    background: white;
-    border: 1px solid slategray;
-    border-radius: 50%;
-    color: slategray;
-    cursor:pointer;
-    transition-duration: .78s;
-  }
-  .carousel_btn_pre:first-child {
-   margin-right: 5px;
-  }
-  .carousel_btn_pre:focus,
-  .carousel_btn_next:focus{
-     outline: none;
-  }
-  .carousel_btn_pre:hover,
-  .carousel_btn_next:hover{
-     color: orange;
-     border-color: orange;
-  }
-  @media (max-width: 1199px) {
-    text-align: center;
-  }
-`;
+
 
 export const WrapperIcons = styled.div `
 display: -webkit-box;
@@ -177,5 +154,12 @@ export const WorkTogetherIconBtn = styled.button `
   :hover {
   background: transparent;
     color: orange;
+  }
+
+  @media (max-width: 991px) {
+    margin-top: 5em;
+  }
+  @media (max-width: 740px) {
+    margin-top: .5em;
   }
 `;

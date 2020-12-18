@@ -3,9 +3,12 @@ import styled from 'styled-components';
 export const WrapperFullStaff = styled.div `
   padding: 8em 0 3em;
   background: white;
+  @media (max-width: 991px){
+    padding-top: 10em;
+  }
 `;
 export const FullStaffContent = styled.div `
-    margin-bottom: 3em;
+    margin-bottom: 7em;
     
     .full_staff_title {
       font-size: calc(.03 * 100vw);
@@ -16,6 +19,9 @@ export const FullStaffContent = styled.div `
     .full_staff_text {
       font-size: 1.7em;
       color: black;
+    }
+    @media (max-width: 991px){
+      margin-bottom: 6em;
     }
     @media (max-width: 768px){
       .full_staff_title{
@@ -105,10 +111,15 @@ export const WrapperCarousel = styled.div `
 export const CarouselCard = styled.div `
     width: 80%;
     padding: 0 18px;
+
   .carousel_item_img {
       width: 100%;
       height: auto;
-      border-radius: 30px;
+  }
+  @media(max-width: 991px) {
+    .carousel_item_img {
+      max-height: 550px;
+    }
   }
 `;
 

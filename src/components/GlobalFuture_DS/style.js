@@ -37,6 +37,9 @@ export const GlobalFutureTitle  = styled.h2 `
     @media(max-width: 1024px){
       font-size: 26px;
     }
+  @media(max-width: 375px){
+    margin-bottom: 1em;
+  }
 `;
 
 export const GlobalFutureText = styled.p `
@@ -107,9 +110,16 @@ export const GlobalFutureItem = styled.div `
       }
   
       @media (max-width: 768px) {
-        
         .future_item_footer {
           padding-top: 1.5em;
       }
       }
+    @media(max-width: 375px) {
+      .future_item_header {
+        padding: 1em 0;
+      }
+      .future_item_footer {
+        padding: 1em 1.5em;
+      }
+    }
 `;

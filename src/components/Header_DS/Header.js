@@ -94,25 +94,6 @@ class Header extends Component{
                     height='100%'
                 />
                 <Container>
-                    <TransitionNavbar pointStyle={pointStyle}>
-                        <WrapperNavbar className={show ? 'active' : 'hidden'}>
-                            <div className="container_navbar">
-                                <Row justify={"between"}>
-                                    <Col lg={4} >
-                                        <HeaderLogo/>
-                                    </Col>
-                                    <Col lg={8} style={{alignSelf: "center"}}>
-                                        <Hidden xs sm md>
-                                            <Navbar toScroll={toScroll}/>
-                                        </Hidden>
-                                        <Visible xs sm md >
-                                            <BurgerMenu toScroll={toScroll}/>
-                                        </Visible>
-                                    </Col>
-                                </Row>
-                            </div>
-                        </WrapperNavbar>
-                    </TransitionNavbar>
                     <Promo toScroll={toScroll}/>
                 </Container>
             </WrapperPlayer>
