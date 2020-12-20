@@ -13,6 +13,15 @@ import {TransitionNavbar, WrapperNavbar} from "../Header_DS/style";
 import HeaderLogo from "../Logo_DS/HeaderLogo";
 import Navbar from "../Header_DS/Navbar";
 import BurgerMenu from "../Header_DS/BurgerMenu";
+import {SectionsContainer, Section} from 'react-fullpage';
+import styled from 'styled-components'
+
+
+export const WrapperSectionContainer = styled.div`
+.section {
+  overflow: initial !important;
+}
+`
 
 
 export default class Home extends Component {
@@ -82,6 +91,20 @@ export default class Home extends Component {
             alignContent: 'center'
         }
 
+        let options = {
+            sectionClassName:     'section',
+            scrollBar:            true,
+            navigation:           false,
+            verticalAlign:        false,
+            arrowNavigation:      false,
+            autoScrolling:        true,
+        };
+
+        const styleSection = {
+            overflow: 'none',
+            background: 'red !important'
+        }
+
         if(this.state.loading) {
             return (
                 <div style={stylePreloader}>
@@ -111,19 +134,31 @@ export default class Home extends Component {
                         </div>
                     </WrapperNavbar>
                 </TransitionNavbar>
-                <ReactPageScroller
-                    renderAllPagesOnFirstRender
-                    customPageNumber={this.state.goTo}
-                    pageOnChange={this.handlePageChange}
-                >
-                    <Header toScroll={this.handleGoToChange} />
-                    <ThreeDeal/>
-                    <GlobalFuture/>
-                    <WorkTogetherContent toScroll={this.handleGoToChange}/>
-                    <Service/>
-                    <FullStaff/>
-                    <Form/>
-                </ReactPageScroller>
+                <WrapperSectionContainer>
+                    <SectionsContainer {...options}>
+                        <Section  style={styleSection}>
+                            <Header toScroll={this.handleGoToChange} />
+                        </Section>
+                        <Section  style={styleSection}>
+                            <ThreeDeal/>
+                        </Section>
+                        <Section  style={styleSection}>
+                            <GlobalFuture/>
+                        </Section>
+                        <Section  style={styleSection}>
+                            <WorkTogetherContent toScroll={this.handleGoToChange}/>
+                        </Section>
+                        <Section  style={styleSection}>
+                            <Service/>
+                        </Section>
+                        <Section  style={styleSection}>
+                            <FullStaff/>
+                        </Section>
+                        <Section  style={styleSection}>
+                            <Form/>
+                        </Section>
+                    </SectionsContainer>
+                </WrapperSectionContainer>
             </ScreenClassProvider>
         );
     }
