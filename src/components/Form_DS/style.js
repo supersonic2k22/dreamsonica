@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const WrapperFrom = styled.div `
-  padding: 4em 0;
+  padding: 4em 0 0;
+  height: 100%;
+  position: relative;
   font-family: Montserrat;
   
   .form_input:focus {

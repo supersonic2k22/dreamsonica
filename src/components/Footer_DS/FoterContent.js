@@ -1,5 +1,4 @@
 import React from "react";
-import {FooterLogo} from "../Logo_DS";
 import {
     InstagramOutlined,
     FacebookOutlined,

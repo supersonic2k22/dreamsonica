@@ -11,8 +11,8 @@ export const WrapperService = styled.div `
   @media (max-width: 991px) {
     padding-top: 10em;
   }
-  @media (max-width: 500px) {
-    padding: 4em;
+  @media (max-width: 576px) {
+    padding: 4em .5em;
   }
 `;
 
@@ -84,8 +84,11 @@ export const WrapperServiceDescription = styled.div `
     padding: 1em 0;
   }
   @media (max-width: 425px) {
+    .slick-prev{
+      left: 2px;
+    }
     .slick-next {
-      right: -30px;
+      right: 17px;
     }
 
     .slick-next:before,

@@ -11,34 +11,13 @@ import Fade from "react-reveal/Fade";
 const params = {
     particles: {
         number: {
-            value: 100,
-            density: {
-                enable: false,
-                value_area: 600
-            }
+            value: 50
+        },
+        size: {
+            value: 3
         },
         color: {
             value: '#000'
-        },
-        opacity: {
-            value: 1,
-            random: false,
-            anim: {
-                enable: false,
-                speed: 1,
-                opacity_min: 0.1,
-                sync: false
-            }
-        },
-        size: {
-            value: 3,
-            random: true,
-            anim: {
-                enable: true,
-                speed: 40,
-                size_min: 0.1,
-                sync: false
-            }
         },
         line_linked: {
             enable: true,
@@ -48,7 +27,14 @@ const params = {
             width: 1
         }
     },
-    retina_detect: true
+    interactivity: {
+        events: {
+            onhover: {
+                enable: true,
+                mode: 'repulse'
+            }
+        }
+    }
 };
 
 

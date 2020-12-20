@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
       font-size: calc(.0333 * 100vw);
     }
   }
-  @media (min-width: 375px) {
+  @media (max-width: 375px) {
     padding-top: 4em;
   }
 `;

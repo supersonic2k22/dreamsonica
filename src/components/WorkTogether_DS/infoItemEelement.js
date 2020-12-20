@@ -11,7 +11,7 @@ const InfoItemElement = ({toScroll}) => {
 
     return (
         <div className="workTogether_item">
-            <WorkTogetherIconBtn onClick={() => toScroll(pages.contact)}>
+            <WorkTogetherIconBtn onClick={() => toScroll('same')}>
                 Let's Talk
             </WorkTogetherIconBtn>
         </div>

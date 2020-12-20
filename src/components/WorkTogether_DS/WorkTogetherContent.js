@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import WorkTogetherCarousel from "./WorkTogetherCarousel";
 import InfoItemElement from "./infoItemEelement";
+import {Element} from 'react-scroll'
 import {
     Container,
     Row,
@@ -13,6 +14,7 @@ import {
     Wrapper,
     HelperElement
 } from './style';
+import ScrollButtonUp from "react-scroll-up-button";
 
 export default class WorkTogetherContent extends Component {
     render() {
@@ -21,6 +23,7 @@ export default class WorkTogetherContent extends Component {
 
         return (
             <Wrapper>
+                <Element id='workflow'/>
                 <Container>
                     <Fade bottom>
                         <Row>
@@ -44,6 +47,10 @@ export default class WorkTogetherContent extends Component {
                             </Col>
                         </Row>
                     )}/>
+                    <ScrollButtonUp ShowAtPosition={1270}
+                                    AnimationDuration={1500}
+                                    style={{borderRadius: '1em', background: 'orange', zIndex:"1", padding: 8}}
+                    />
                 </Container>
             </Wrapper>
         );

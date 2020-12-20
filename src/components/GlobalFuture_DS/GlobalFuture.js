@@ -1,5 +1,6 @@
 import React, {Component, useRef, useState} from "react";
 import Slider from 'react-slick';
+import {Element} from 'react-scroll'
 import {
     Container,
     Row,
@@ -107,6 +108,7 @@ export default class GlobalFuture extends Component{
 
         return (
             <WrapperGlobalFuture>
+                <Element id='powerTeam'/>
                 <Container>
                     <Fade bottom>
                         <Row >

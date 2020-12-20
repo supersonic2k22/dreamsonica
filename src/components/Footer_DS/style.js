@@ -2,6 +2,11 @@ import styled from 'styled-components'
 
 export const WrapperFooter = styled.div `
   margin-top: 70px;
+  ${({ isDesktop }) => isDesktop && `
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  `}
 `;
 
 export const WrapperFooterContent = styled.div `
@@ -60,7 +65,7 @@ export const  PrivacyBrandFooter  = styled.div`
   }
   @media(max-width: 991px) {
     justify-content: center;
-    padding-bottom: 2em;
+    padding: 0.5em 0;
   } 
 `;
 export const  PrivacyPrivateFooter  = styled(PrivacyBrandFooter)`

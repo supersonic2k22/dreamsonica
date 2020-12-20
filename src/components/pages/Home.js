@@ -1,37 +1,20 @@
 import React, { Component } from 'react';
-import {Col, Hidden, Row, ScreenClassProvider, Visible} from "react-grid-system";
-import Header from "../Header_DS/Header";
-import ThreeDeal from "../ThreeDeall_DS";
-import WorkTogetherContent from "../WorkTogether_DS";
-import FullStaff from "../FullStaff_DS";
-import Service from "../Service_DS";
-import GlobalFuture from "../GlobalFuture_DS";
-import Form from "../Form_DS";
+import { ScreenClassProvider} from "react-grid-system";
 import  gifLoader  from '../../static/video/right-left.gif.gif';
-import ReactPageScroller from "react-page-scroller";
-import {TransitionNavbar, WrapperNavbar} from "../Header_DS/style";
-import HeaderLogo from "../Logo_DS/HeaderLogo";
-import Navbar from "../Header_DS/Navbar";
-import BurgerMenu from "../Header_DS/BurgerMenu";
-import {SectionsContainer, Section} from 'react-fullpage';
-import styled from 'styled-components'
-
-
-export const WrapperSectionContainer = styled.div`
-.section {
-  overflow: initial !important;
-}
-`
+import {
+    isMobile, isTablet
+} from "react-device-detect";
+import {
+    Events,
+    scroller,
+} from 'react-scroll'
+import {DeskTop, Mobile} from "../UsingDevices";
 
 
 export default class Home extends Component {
 
     state = {
         loading: true,
-        currentPage: 0,
-        show: true,
-        goTo: 0,
-        pointStyle: false
     }
 
     componentDidMount() {
@@ -40,6 +23,13 @@ export default class Home extends Component {
                 loading: false
             })
         })
+
+        Events.scrollEvent.register('begin', () => {
+            return arguments;
+        });
+        Events.scrollEvent.register('end', () => {
+            return arguments;
+        })
     }
 
 
@@ -47,37 +37,21 @@ export default class Home extends Component {
         return new Promise(resolve => setTimeout(()=>resolve(), 2000))
     }
 
-    handlePageChange = number => {
-        const {currentPage: prevPage} = this.state;
-        const show = prevPage > number || prevPage === 0;
-
-        const fillNavbar = (number !== 0 && number > 0);
-        console.log('number ' + number)
-        console.log('prev ' + prevPage)
-        console.log('show ' + show)
-        console.log( 'fillBar ' + fillNavbar)
-        this.setState({
-            currentPage: number,
-            show,
-            pointStyle: fillNavbar
-        });
-    };
-
-    handleGoToChange = number => {
-        this.setState(()=> {
-            return {
-                goTo: number
-            }
-        });
-    };
+    scrollTo = (id) => {
+        scroller.scrollTo(id, {
+            duration: 1800,
+            delay: 150,
+            smooth: 'easeInSine'
+        })
+    }
 
     componentWillUnmount() {
-        this.fakeRequest().then(null)
+        this.fakeRequest().then(null);
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
     }
 
     render() {
-        const {show, pointStyle} = this.state;
-
         const stylePreloader = {
             position:"fixed",
             top: '0',
@@ -91,20 +65,6 @@ export default class Home extends Component {
             alignContent: 'center'
         }
 
-        let options = {
-            sectionClassName:     'section',
-            scrollBar:            true,
-            navigation:           false,
-            verticalAlign:        false,
-            arrowNavigation:      false,
-            autoScrolling:        true,
-        };
-
-        const styleSection = {
-            overflow: 'none',
-            background: 'red !important'
-        }
-
         if(this.state.loading) {
             return (
                 <div style={stylePreloader}>
@@ -115,50 +75,11 @@ export default class Home extends Component {
 
         return (
             <ScreenClassProvider>
-                <TransitionNavbar pointStyle={pointStyle}>
-                    <WrapperNavbar className={show ? 'active' : 'hidden'}>
-                        <div className="container_navbar">
-                            <Row justify={"between"}>
-                                <Col lg={4} >
-                                    <HeaderLogo/>
-                                </Col>
-                                <Col lg={8} style={{alignSelf: "center"}}>
-                                    <Hidden xs sm md>
-                                        <Navbar toScroll={this.handleGoToChange}/>
-                                    </Hidden>
-                                    <Visible xs sm md >
-                                        <BurgerMenu toScroll={this.handleGoToChange}/>
-                                    </Visible>
-                                </Col>
-                            </Row>
-                        </div>
-                    </WrapperNavbar>
-                </TransitionNavbar>
-                <WrapperSectionContainer>
-                    <SectionsContainer {...options}>
-                        <Section  style={styleSection}>
-                            <Header toScroll={this.handleGoToChange} />
-                        </Section>
-                        <Section  style={styleSection}>
-                            <ThreeDeal/>
-                        </Section>
-                        <Section  style={styleSection}>
-                            <GlobalFuture/>
-                        </Section>
-                        <Section  style={styleSection}>
-                            <WorkTogetherContent toScroll={this.handleGoToChange}/>
-                        </Section>
-                        <Section  style={styleSection}>
-                            <Service/>
-                        </Section>
-                        <Section  style={styleSection}>
-                            <FullStaff/>
-                        </Section>
-                        <Section  style={styleSection}>
-                            <Form/>
-                        </Section>
-                    </SectionsContainer>
-                </WrapperSectionContainer>
+                { !isMobile && !isTablet ? (
+                    <DeskTop toScroll={this.scrollTo} />
+                ) : (
+                   <Mobile toScroll={this.scrollTo}/>
+                )}
             </ScreenClassProvider>
         );
     }

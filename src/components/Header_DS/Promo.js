@@ -30,7 +30,7 @@ const Promo = ({toScroll}) => {
                         odit optio perferendis quos vitae! Culpa?
                     </PromoText>
                     <PromoButton  >
-                        <button className='promo_btn' onClick={()=> toScroll(pages.contact)}>Let's Talk</button>
+                        <button className='promo_btn' onClick={()=> toScroll('same')}>Let's Talk</button>
                     </PromoButton>
 
                 </Col>

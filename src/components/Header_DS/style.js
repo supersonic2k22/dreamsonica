@@ -128,9 +128,21 @@ justify-content: flex-end;
 .navbar_menu_list p {
 color: black;
 cursor: pointer;
-transition-duration: .8s;
+transition: .8s;
 }
-.navbar_menu_list p:hover {
+.navbar_menu_list:hover p{
 color: orange;
+}
+  .menu_icon_power-team,
+  .menu_icon_workflow, 
+  .menu_icon_service,
+  .menu_icon_contact{
+    font-size: 1.5em;
+    padding-right: 10px;
+  }
+@media(max-width: 1199px){
+  .navbar_menu_list {
+    margin-left: 2em !important;
+  }
 }
 `;

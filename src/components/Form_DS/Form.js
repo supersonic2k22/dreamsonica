@@ -4,6 +4,7 @@ import {Checkbox} from 'antd';
 import {Container, Row, Col} from "react-grid-system";
 import {WrapperFrom} from './style';
 import Footer from "../Footer_DS";
+import {Element} from 'react-scroll'
 
 const ContactForm = () =>{
     const formik = useFormik({
@@ -22,6 +23,7 @@ const ContactForm = () =>{
 
     return (
         <WrapperFrom>
+            <Element id='same'/>
             <Container>
                 <Row align={"center"} justify={"center"}>
                     <Col lg={7}>
