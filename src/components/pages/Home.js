@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScreenClassProvider} from "react-grid-system";
-import  gifLoader  from '../../static/video/right-left.gif.gif';
+import  gifLoader  from '../../static/video/Dream Sonica.gif';
 import {
     isMobile, isTablet
 } from "react-device-detect";

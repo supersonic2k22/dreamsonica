@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-
+import { ArrowLeftOutlined, ArrowRightOutlined} from '@ant-design/icons';
 
 import {
     WrapperCarousel,
     CarouselCard,
+    CarouselBoxBtns
 } from './style';
 
 
@@ -24,6 +25,7 @@ export default class CarouselComponent extends Component{
         const {collectionSlider} = this.props;
 
         const settings = {
+            arrows: false,
             dots: false,
             speed: 500,
             infinite: true,
@@ -67,8 +69,18 @@ export default class CarouselComponent extends Component{
                                 <img className="carousel_item_img" src={`${elem.image}`} alt=""/>
                             </CarouselCard>
                         )
-                    )}
+                     )
+                    }
+
                 </Slider>
+                <CarouselBoxBtns>
+                    <button className="carousel_btn_pre" onClick={() => this.previous()}>
+                        <ArrowLeftOutlined />
+                    </button>
+                    <button className="carousel_btn_next" onClick={() => this.next()}>
+                        <ArrowRightOutlined />
+                    </button>
+                </CarouselBoxBtns>
             </WrapperCarousel>
         );
     }

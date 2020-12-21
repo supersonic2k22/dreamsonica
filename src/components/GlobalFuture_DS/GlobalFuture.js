@@ -132,14 +132,11 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
+                                            <img src={require('../../static/images/gravity.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
-                                                <p className="future_item_footer--text">77</p>
-                                            </div>
-                                            <div>
-                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                                <h3 className="future_item_footer--title">DIGITAL MARKETING LONG EXPERIENCE SINCE 2012</h3>
                                             </div>
                                         </div>
                                     </GlobalFutureItem>
@@ -149,14 +146,11 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
+                                            <img src={require('../../static/images/video-game.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
-                                                <p className="future_item_footer--text">77</p>
-                                            </div>
-                                            <div>
-                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                                <h3 className="future_item_footer--title">CASUAL GAMES STRONG FOCUS</h3>
                                             </div>
                                         </div>
                                     </GlobalFutureItem>
@@ -166,14 +160,11 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/done_ico.svg')} alt=""/>
+                                            <img src={require('../../static/images/shooting-game.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
-                                                <p className="future_item_footer--text">77</p>
-                                            </div>
-                                            <div>
-                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur something.</h3>
+                                                <h3 className="future_item_footer--title">LAZER TARGETING</h3>
                                             </div>
                                         </div>
                                     </GlobalFutureItem>
@@ -183,14 +174,11 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/machine_point.svg')} alt=""/>
+                                            <img src={require('../../static/images/gamepad.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
-                                                <p className="future_item_footer--text">99%</p>
-                                            </div>
-                                            <div>
-                                                <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur something.</h3>
+                                                <h3 className="future_item_footer--title">ROI ORIENTED USER ACQUISITION</h3>
                                             </div>
                                         </div>
                                     </GlobalFutureItem>
@@ -203,53 +191,41 @@ export default class GlobalFuture extends Component{
                             <Slider {...settings}>
                                 <GlobalFutureItem >
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
+                                        <img src={require('../../static/images/shooting-game.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>
-                                            <p className="future_item_footer--text">77</p>
-                                        </div>
-                                        <div>
-                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                            <h3 className="future_item_footer--title">DIGITAL MARKETING LONG EXPERIENCE SINCE 2012</h3>
                                         </div>
                                     </div>
                                 </GlobalFutureItem>
                                 <GlobalFutureItem>
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/build_from_scratch_ico.svg')} alt=""/>
+                                        <img src={require('../../static/images/gamepad.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>
-                                            <p className="future_item_footer--text">77</p>
-                                        </div>
-                                        <div>
-                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit.</h3>
+                                            <h3 className="future_item_footer--title">CASUAL GAMES STRONG FOCUS</h3>
                                         </div>
                                     </div>
                                 </GlobalFutureItem>
                                 <GlobalFutureItem>
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/done_ico.svg')} alt=""/>
+                                        <img src={require('../../static/images/gravity.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>
-                                            <p className="future_item_footer--text">77</p>
-                                        </div>
-                                        <div>
-                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                                            <h3 className="future_item_footer--title">LAZER TARGETING</h3>
                                         </div>
                                     </div>
                                 </GlobalFutureItem>
                                 <GlobalFutureItem>
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/machine_point.svg')} alt=""/>
+                                        <img src={require('../../static/images/video-game.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>
-                                            <p className="future_item_footer--text">99%</p>
-                                        </div>
-                                        <div>
-                                            <h3 className="future_item_footer--title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                            <h3 className="future_item_footer--title">ROI ORIENTED USER ACQUISITION</h3>
                                         </div>
                                     </div>
                                 </GlobalFutureItem>

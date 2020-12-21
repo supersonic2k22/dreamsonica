@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import { LeftOutlined, RightOutlined} from '@ant-design/icons';
+import { ArrowLeftOutlined, ArrowRightOutlined} from '@ant-design/icons';
 import {
     WrapperServiceDescription,
     WrapperServiceCarousel,
     CarouselItem,
+    CarouselBoxBtns
 } from './style'
 
 
@@ -22,6 +23,7 @@ export default class ServiceDescription extends Component{
     render() {
 
         const settings = {
+            arrows: false,
             dots: false,
             fade: true,
             speed: 500,
@@ -61,6 +63,14 @@ export default class ServiceDescription extends Component{
                             </div>
                         </CarouselItem>
                     </Slider>
+                    <CarouselBoxBtns>
+                        <button className="carousel_btn_pre" onClick={() => this.previous()}>
+                            <ArrowLeftOutlined />
+                        </button>
+                        <button className="carousel_btn_next" onClick={() => this.next()}>
+                            <ArrowRightOutlined />
+                        </button>
+                    </CarouselBoxBtns>
                 </WrapperServiceCarousel>
             </WrapperServiceDescription>
         );

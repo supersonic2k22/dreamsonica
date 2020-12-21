@@ -21,6 +21,9 @@ export const Wrapper = styled.div`
   @media (max-width: 1199px) {
     padding-bottom: 15em;
   }
+  @media(max-width: 991px) {
+    padding: 5em 0;
+  }
   @media (min-width: 768px) {
     .content_title {
       font-size: calc(.0333 * 100vw);

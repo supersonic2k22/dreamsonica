@@ -47,59 +47,12 @@ export const WrapperServiceDescription = styled.div `
   background: white;
   border-radius: 2em;
   box-shadow: 0 0 30px 0 silver;
-
-
-  .slick-prev,
-  .slick-next {
-    background: transparent;
-  }
-
-  .slick-prev {
-    left: -40px;
-    z-index: 10;
-  }
-
-  .slick-next {
-    right: -20px;
-  }
-
-  .slick-next:before,
-  .slick-prev:before {
-    font-size: 38px;
-    line-height: 1;
-    opacity: 1;
-    color: #fa7107;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 0 lightslategray;
-    transition: .7s;
-  }
-
-  .slick-next:hover:before,
-  .slick-prev:hover:before {
-    color: #b04900;
-  }
-
-
-  @media (max-width: 991px) {
-    padding: 1em 0;
-  }
-  @media (max-width: 425px) {
-    .slick-prev{
-      left: 2px;
-    }
-    .slick-next {
-      right: 17px;
-    }
-
-    .slick-next:before,
-    .slick-prev:before {
-      font-size: 28px;
-    }
-  }
+  
 `;
 
 
 export const WrapperServiceCarousel = styled.div `
+    position: relative;
     padding: 0 4em;
     @media (max-width: 425px) {
       padding: 0 0;
@@ -130,6 +83,53 @@ export const CarouselItem = styled.div `
   @media (max-width: 991px) {
     .carousel_item_icon img {
       max-height: 450px;
+    }
+  }
+`;
+
+export const CarouselBoxBtns = styled.div `
+  margin-top: 1em;
+  
+  .carousel_btn_pre,
+  .carousel_btn_next{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+    cursor:pointer;
+    transform: translate(0,-50%);
+    transition-duration: .78s;
+  }
+  .carousel_btn_next {
+    right: 10px;
+  }
+  .carousel_btn_pre {
+    left: 15px;
+  }
+  
+  .carousel_btn_pre:focus,
+  .carousel_btn_next:focus{
+     outline: none;
+  }
+  .carousel_btn_pre:hover,
+  .carousel_btn_next:hover{
+     color: orange;
+     border-color: orange;
+  }
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
+  @media(max-width: 425px) {
+    .carousel_btn_pre,
+    .carousel_btn_next{
+      position: initial;
+    }
+    .carousel_btn_pre:first-child {
+      margin-right: 7px;
     }
   }
 `;

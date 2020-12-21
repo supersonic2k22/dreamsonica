@@ -52,60 +52,8 @@ export const WrapperStuffShip = styled.div `
   }
 `;
 export const WrapperCarousel = styled.div `
-
-  .slick-prev,
-  .slick-next {
-    background: transparent;
-  }
-
-  .slick-prev {
-    left: -40px;
-    z-index: 10;
-  }
-
-  .slick-next {
-    right: -20px;
-  }
-
-  .slick-next:before,
-  .slick-prev:before {
-    font-size: 38px;
-    line-height: 1;
-    opacity: 1;
-    color: #1890ff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 0 lightslategray;
-    transition: .7s;
-  }
-
-  .slick-next:hover:before,
-  .slick-prev:hover:before {
-    color: #fa7107;
-  }
+  position: relative;
   
-  @media(max-width: 1024px){
-    .slick-prev {
-      left: -20px;
-    }
-    .slick-next {
-      right: -7px;
-    }
-  }
-  @media(max-width: 768px){
-    .slick-prev {
-      left: 0;
-    }
-    .slick-next {
-      right: 15px;
-    }
-  }
-  @media (max-width: 425px) {
-    
-    .slick-next:before,
-    .slick-prev:before {
-      font-size: 28px;
-    }
-  }
 `;
 
 export const CarouselCard = styled.div `
@@ -119,6 +67,54 @@ export const CarouselCard = styled.div `
   @media(max-width: 991px) {
     .carousel_item_img {
       max-height: 550px;
+    }
+  }
+`;
+
+
+export const CarouselBoxBtns = styled.div `
+  margin-top: 1em;
+  
+  .carousel_btn_pre,
+  .carousel_btn_next{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+    cursor:pointer;
+    transform: translate(0,-50%);
+    transition-duration: .78s;
+  }
+  .carousel_btn_next {
+    right: 10px;
+  }
+  .carousel_btn_pre {
+    left: 15px;
+  }
+  
+  .carousel_btn_pre:focus,
+  .carousel_btn_next:focus{
+     outline: none;
+  }
+  .carousel_btn_pre:hover,
+  .carousel_btn_next:hover{
+     color: orange;
+     border-color: orange;
+  }
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
+  @media(max-width: 425px) {
+    .carousel_btn_pre,
+    .carousel_btn_next{
+      position: initial;
+    }
+    .carousel_btn_pre:first-child {
+      margin-right: 7px;
     }
   }
 `;

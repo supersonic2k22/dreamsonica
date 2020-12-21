@@ -3,9 +3,9 @@ import InfoItemElement from "./infoItemEelement";
 import { Hidden } from "react-grid-system";
 import {WrapperIcons} from './style';
 
-import doneIcon from '../../static/images/done_ico.svg';
-import scratchIcon from '../../static/images/build_from_scratch_ico.svg';
-import machinePoint from '../../static/images/machine_point.svg';
+import doneIcon from '../../static/images/award.svg';
+import scratchIcon from '../../static/images/idea.svg';
+import machinePoint from '../../static/images/startup.svg';
 
 
 export default class WorkTogetherIcons extends Component {
