@@ -1,6 +1,9 @@
 import React, {createRef, Component} from "react";
 import {Container, Row, Col} from "react-grid-system";
 import {
+    isMobile, isTablet
+} from "react-device-detect";
+import {
     WrapperThreeDeal,
     ThreeDealTitle,
     ThreeDealText, HeroWrap, HeroBody
@@ -8,7 +11,7 @@ import {
 import ReactParticles from "react-particles-js";
 import Fade from "react-reveal/Fade";
 
-const params = {
+const paramsDesktop = {
     particles: {
         number: {
             value: 200
@@ -29,11 +32,43 @@ const params = {
     }
 };
 
+const paramsMobile = {
+    particles: {
+        number: {
+            value: 50
+        },
+        size: {
+            value: 3
+        },
+        color: {
+            value: '#000'
+        },
+        line_linked: {
+            enable: true,
+            distance: 100,
+            color: '#000',
+            opacity: 0.7,
+            width: 1
+        }
+    },
+    interactivity: {
+        events: {
+            onhover: {
+                enable: true,
+                mode: 'repulse'
+            }
+        }
+    }
+}
+
 const Particles = ({ children }) => {
+
+    const currentParams = (!isMobile && !isTablet) ? paramsDesktop : paramsMobile
+
     return (
         <div style={{ position: 'relative' }}>
             <ReactParticles
-                params={params}
+                params={currentParams}
                 style={{
                     position: 'absolute',
                     zIndex: -1,

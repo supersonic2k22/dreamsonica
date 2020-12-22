@@ -22,9 +22,9 @@ const DeskTop = ({toScroll}) => {
             <Slide>
                 <GlobalFuture/>
             </Slide>
-            <Slide>
-                <WorkTogetherContent toScroll={toScroll}/>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <WorkTogetherContent toScroll={toScroll}/>*/}
+            {/*</Slide>*/}
             <Slide>
                 <Service/>
             </Slide>

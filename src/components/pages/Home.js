@@ -34,7 +34,7 @@ export default class Home extends Component {
 
 
     fakeRequest = () => {
-        return new Promise(resolve => setTimeout(()=>resolve(), 2000))
+        return new Promise(resolve => setTimeout(()=>resolve(), 10000))
     }
 
     scrollTo = (id) => {

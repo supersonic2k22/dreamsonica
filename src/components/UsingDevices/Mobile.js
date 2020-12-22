@@ -15,7 +15,7 @@ const Mobile = ({toScroll}) => {
             <Header toScroll={toScroll} />
             <ThreeDeal/>
             <GlobalFuture/>
-            <WorkTogetherContent toScroll={toScroll}/>
+            {/*<WorkTogetherContent toScroll={toScroll}/>*/}
             <Service/>
             <FullStaff/>
             <Form/>
