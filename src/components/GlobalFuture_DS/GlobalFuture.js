@@ -132,7 +132,7 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/gravity.svg')} alt=""/>
+                                            <img src={require('../../static/images/nodes.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
@@ -146,7 +146,7 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/video-game.svg')} alt=""/>
+                                            <img src={require('../../static/images/joystick.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
@@ -160,7 +160,7 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/shooting-game.svg')} alt=""/>
+                                            <img src={require('../../static/images/desktop-computer.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
@@ -174,7 +174,7 @@ export default class GlobalFuture extends Component{
                                 <Card>
                                     <GlobalFutureItem>
                                         <div className="future_item_header">
-                                            <img src={require('../../static/images/gamepad.svg')} alt=""/>
+                                            <img src={require('../../static/images/gaming.svg')} alt=""/>
                                         </div>
                                         <div className="future_item_footer">
                                             <div>
@@ -191,7 +191,7 @@ export default class GlobalFuture extends Component{
                             <Slider {...settings}>
                                 <GlobalFutureItem >
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/shooting-game.svg')} alt=""/>
+                                        <img src={require('../../static/images/nodes.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>
@@ -201,7 +201,7 @@ export default class GlobalFuture extends Component{
                                 </GlobalFutureItem>
                                 <GlobalFutureItem>
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/gamepad.svg')} alt=""/>
+                                        <img src={require('../../static/images/joystick.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>
@@ -211,7 +211,7 @@ export default class GlobalFuture extends Component{
                                 </GlobalFutureItem>
                                 <GlobalFutureItem>
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/gravity.svg')} alt=""/>
+                                        <img src={require('../../static/images/desktop-computer.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>
@@ -221,7 +221,7 @@ export default class GlobalFuture extends Component{
                                 </GlobalFutureItem>
                                 <GlobalFutureItem>
                                     <div className="future_item_header">
-                                        <img src={require('../../static/images/video-game.svg')} alt=""/>
+                                        <img src={require('../../static/images/gaming.svg')} alt=""/>
                                     </div>
                                     <div className="future_item_footer">
                                         <div>

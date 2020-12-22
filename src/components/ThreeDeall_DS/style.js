@@ -41,7 +41,11 @@ export const ThreeDealText = styled.p `
   font-size: 1.4em;
   line-height: 2.2em;
   max-width: 45%;
-  
+
+  @media(max-width: 768px){
+    max-width: 100%;
+    text-align: center;
+  }
   @media(max-width: 375px){
     margin-bottom: 30px;
   }
@@ -63,33 +67,4 @@ export const HeroBody = styled.div `
   @media screen and (min-width: 980px) {
     padding: 8rem 1.5rem;
   }  
-`;
-
-export const ThreeDealBox = styled.div `
-  .threeDeal_icon {
-  padding: 0 1em;
-  width: 100%;
-  margin-bottom: 25px;
-  text-align: center;
-  }
-  .threeDeal_icon img {
-  height: 90px;
-  }
-  
-  .threeDeal_title{
-    font-size: calc(.01606*100vw);
-    font-weight: 600;
-    color: black;
-    text-align: center;
-    line-height: 1.2;
-  }
-  .threeDeal_text {
-  font-size: 18px;
-  color: black;
-  }
-  @media (max-width: 1440px){
-  .threeDeal_title{
-    font-size: 18px;
-    }
-  }
 `;
