@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ScreenClassProvider} from "react-grid-system";
 import  gifLoader  from '../../static/video/Dream Sonica.gif';
+import Fade from "react-reveal/Fade";
 import {
     isMobile, isTablet
 } from "react-device-detect";
@@ -34,7 +35,7 @@ export default class Home extends Component {
 
 
     fakeRequest = () => {
-        return new Promise(resolve => setTimeout(()=>resolve(), 10000))
+        return new Promise(resolve => setTimeout(()=>resolve(), 3500))
     }
 
     scrollTo = (id) => {
@@ -67,19 +68,21 @@ export default class Home extends Component {
 
         if(this.state.loading) {
             return (
-                <div style={stylePreloader}>
-                    <img src={gifLoader} alt='Loader' style={{width: '100%', height: 'auto'}}/>
-                </div>
+                    <div style={stylePreloader}>
+                        <img src={gifLoader} alt='Loader' style={{width: '100%', height: 'auto', margin: 'auto'}}/>
+                    </div>
             )
         }
 
         return (
             <ScreenClassProvider>
-                { !isMobile && !isTablet ? (
-                    <DeskTop toScroll={this.scrollTo} />
-                ) : (
-                   <Mobile toScroll={this.scrollTo}/>
-                )}
+                <Fade>
+                    { !isMobile && !isTablet ? (
+                        <DeskTop toScroll={this.scrollTo} />
+                    ) : (
+                        <Mobile toScroll={this.scrollTo}/>
+                    )}
+                </Fade>
             </ScreenClassProvider>
         );
     }

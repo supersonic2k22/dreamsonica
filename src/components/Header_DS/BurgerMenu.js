@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import {slide as Menu} from 'react-burger-menu';
-import {pages} from '../../configs/app.config'
 import "./styleBurger.css"
-import {
 
-} from './style'
 
 
 export default class BurgerMenu extends Component{

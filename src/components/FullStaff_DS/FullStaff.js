@@ -21,16 +21,16 @@ export default class FullStaff extends Component{
                <Element id="power_team" className={"power-team"}/>
                    <Container>
                        <Fade bottom>
-                       <Row>
-                           <Col md={12}>
-                               <FullStaffContent>
-                                   <h2 className="full_staff_title">Our Clients</h2>
-                               </FullStaffContent>
-                           </Col>
-                               <Col lg={12}>
-                                   <Talent className={'animate__fadeIn animate__fadeIn animate__delay-2s'}/>
+                           <Row>
+                               <Col md={12}>
+                                   <FullStaffContent>
+                                       <h2 className="full_staff_title">Our Clients</h2>
+                                   </FullStaffContent>
                                </Col>
-                       </Row>
+                                   <Col lg={12}>
+                                       <Talent className={'animate__fadeIn animate__fadeIn animate__delay-2s'}/>
+                                   </Col>
+                           </Row>
                        </Fade>
                    </Container>
            </WrapperFullStaff>

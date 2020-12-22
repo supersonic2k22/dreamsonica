@@ -25,6 +25,7 @@ const FooterContent = () => {
                 <Row justify={"between"} >
                     <Col md={12} lg={4} >
                         <WrapperLogoFooter>
+                            {/*//To pass the component FooterLogo*/}
                         </WrapperLogoFooter>
                     </Col>
                     <Col md={12} lg={4} style={{alignSelf: "center"}}>

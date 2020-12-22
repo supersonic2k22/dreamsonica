@@ -39,7 +39,7 @@ export default class ServiceDescription extends Component{
                     <Slider ref={c => (this.slider = c)} {...settings}>
                         <CarouselItem key={1}>
                             <div className="carousel_item_icon">
-                                <img  src={require('../../static/images/sonica/logo/logo1.png')} alt=""/>
+                                <img  src={require('../../static/images/sonica/logo/logo1.png')} alt="Dream Sonica work Google Ads"/>
                             </div>
                         </CarouselItem>
                         <CarouselItem key={2}>
@@ -60,6 +60,11 @@ export default class ServiceDescription extends Component{
                         <CarouselItem key={5}>
                             <div className="carousel_item_icon">
                                 <img  src={require('../../static/images/sonica/logo/logo5.png')} alt=""/>
+                            </div>
+                        </CarouselItem>
+                        <CarouselItem key={6}>
+                            <div className="carousel_item_icon">
+                                <img  src={require('../../static/images/sonica/logo/logo6.png')} alt=""/>
                             </div>
                         </CarouselItem>
                     </Slider>

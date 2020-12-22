@@ -47,8 +47,6 @@ class Header extends Component{
     }
 
     handleScroll = () => {
-        console.log('scroll');
-
         const { scrollPos } = this.state;
 
         this.setState({

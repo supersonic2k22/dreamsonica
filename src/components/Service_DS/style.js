@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
 export const WrapperService = styled.div `
-  padding: 8em 0;
-  background: white;
+padding: 8em 0;
+background: white;
   
   @media (max-width: 1199px) {
     padding-top: 14em;
   }
-
   @media (max-width: 991px) {
     padding-top: 10em;
   }
@@ -17,16 +16,15 @@ export const WrapperService = styled.div `
 `;
 
 export const WrapperServiceContent = styled.div `
-
-  .service_content_title {
-    font-size: calc(.028 * 100vw);
-    font-weight: 600;
-    line-height: 1;
-  }
-  .service_content_text {
-    font-size: 1.7em;
-    line-height: 1.5;
-  }
+.service_content_title {
+font-size: calc(.028 * 100vw);
+font-weight: 600;
+line-height: 1;
+}
+.service_content_text {
+font-size: 1.7em;
+line-height: 1.5;
+}
   @media (max-width: 991px) {
     margin-bottom: 3em;
   }
@@ -60,25 +58,25 @@ export const WrapperServiceCarousel = styled.div `
 `;
 
 export const CarouselItem = styled.div `
-  .carousel_item_icon img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 2em;
-  }
-  .carousel_item_title {
-    font-size: calc(.017 * 100vw);
-    font-weight: 500;
-    line-height: 1;
-  }
-  .carousel_item_text {
-    font-size: 1.5em;
-    line-height: 1.5;
-  }
+.carousel_item_icon img {
+width: 100%;
+height: auto;
+margin: 0 auto;
+margin-bottom: 2em;
+}
+.carousel_item_title {
+font-size: calc(.017 * 100vw);
+font-weight: 500;
+line-height: 1;
+}
+.carousel_item_text {
+font-size: 1.5em;
+line-height: 1.5;
+}
   @media (max-width: 1199px) {
-      .carousel_item_title {
-        font-size: 22px;
-      }
+    .carousel_item_title {
+      font-size: 22px;
+    }
   }
   @media (max-width: 991px) {
     .carousel_item_icon img {
@@ -88,7 +86,7 @@ export const CarouselItem = styled.div `
 `;
 
 export const CarouselBoxBtns = styled.div `
-  margin-top: 1em;
+margin-top: 1em;
   
   .carousel_btn_pre,
   .carousel_btn_next{
@@ -120,18 +118,18 @@ export const CarouselBoxBtns = styled.div `
      color: orange;
      border-color: orange;
   }
-  @media (max-width: 1199px) {
-    text-align: center;
-  }
-  @media(max-width: 425px) {
-    .carousel_btn_pre,
-    .carousel_btn_next{
-      position: initial;
-    }
-    .carousel_btn_pre:first-child {
-      margin-right: 7px;
-    }
-  }
+      @media (max-width: 1199px) {
+        text-align: center;
+      }
+      @media(max-width: 425px) {
+        .carousel_btn_pre,
+        .carousel_btn_next{
+          position: initial;
+        }
+        .carousel_btn_pre:first-child {
+          margin-right: 7px;
+        }
+      }
 `;
 
 

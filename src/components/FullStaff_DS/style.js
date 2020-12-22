@@ -70,8 +70,6 @@ export const CarouselCard = styled.div `
     }
   }
 `;
-
-
 export const CarouselBoxBtns = styled.div `
   margin-top: 1em;
   

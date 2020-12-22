@@ -6,7 +6,9 @@ import {
 import {
     WrapperThreeDeal,
     ThreeDealTitle,
-    ThreeDealText, HeroWrap, HeroBody
+    ThreeDealText,
+    HeroWrap,
+    HeroBody
 } from './style';
 import ReactParticles from "react-particles-js";
 import Fade from "react-reveal/Fade";
