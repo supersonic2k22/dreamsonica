@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const WrapperThreeDeal = styled.div `
+  overflow: hidden;
   position: relative;
   padding: 8em 0 0 0;
   box-shadow: 5px -21px 60px 45px white;
@@ -34,11 +35,12 @@ export const ThreeDealTitle = styled.h2 `
   }
 `;
 
-export const ThreeDealText = styled.p ` 
+export const ThreeDealText = styled.p `
   margin-bottom: 60px;
-  text-align: center;
+  text-align: left;
   font-size: 1.4em;
   line-height: 2.2em;
+  max-width: 45%;
   
   @media(max-width: 375px){
     margin-bottom: 30px;

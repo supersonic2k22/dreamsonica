@@ -11,33 +11,23 @@ import Fade from "react-reveal/Fade";
 const params = {
     particles: {
         number: {
-            value: 50
+            value: 200
         },
         size: {
-            value: 3
+            value: 5
         },
         color: {
-            value: '#000'
+            value: '#00148d'
         },
         line_linked: {
             enable: true,
             distance: 100,
-            color: '#000',
-            opacity: 0.7,
-            width: 1
-        }
-    },
-    interactivity: {
-        events: {
-            onhover: {
-                enable: true,
-                mode: 'repulse'
-            }
+            color: '#00148d',
+            opacity: 0.9,
+            width: 2
         }
     }
 };
-
-
 
 const Particles = ({ children }) => {
     return (
@@ -47,10 +37,10 @@ const Particles = ({ children }) => {
                 style={{
                     position: 'absolute',
                     zIndex: -1,
-                    left: 0,
+                    left: '50%',
                     right: 0,
                     bottom: 0,
-                    top: 0
+                    top: 0,
                 }}
                 height={'100%'}
             />
@@ -84,12 +74,12 @@ export default class ThreeDeal extends Component {
                                 </Row>
                                 <Row justify={"center"}>
                                     <Col md={12}>
-                                        <ThreeDealText>
+                                        <ThreeDealText style={{fontWeight: 'bold'}}>
                                             YOUR FULLY ASSEMBLED UA TEAM
                                         </ThreeDealText>
                                     </Col>
-                                    <Col  md={12} lg={10} >
-                                        <ThreeDealText style={{textAlign: 'center'}}>
+                                    <Col  md={12}>
+                                        <ThreeDealText>
                                             We provide a fully-managed user acquisition service for game\app developers.
                                             Since our founding, we have focused on two of the most important
                                             pieces of the user acquisition puzzle - ROI and Value.
