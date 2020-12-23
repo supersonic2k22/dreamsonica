@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import DesktopGlobalFuture from "./DesktopGlobalFuture";
 import MobileGlobalFuture from "./MobileGlobalFuture";
+import ScrollButtonUp from 'react-scroll-up-button'
 import Fade from "react-reveal/Fade";
 import {Element} from 'react-scroll'
 import {
@@ -47,6 +48,10 @@ export default class GlobalFuture extends Component{
                        <MobileGlobalFuture/>
                     </Visible>
                 </Container>
+                <ScrollButtonUp ShowAtPosition={1270}
+                                AnimationDuration={1500}
+                                style={{borderRadius: '1em', background: 'orange', zIndex:"1"}}
+                />
             </WrapperGlobalFuture>
         )
     }
