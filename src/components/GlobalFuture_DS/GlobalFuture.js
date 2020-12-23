@@ -23,7 +23,7 @@ export default class GlobalFuture extends Component{
     render() {
         return (
             <WrapperGlobalFuture>
-                <Element id='powerTeam'/>
+                <Element id='why_choose_us'/>
                 <Container>
                     <Fade bottom>
                         <Row >

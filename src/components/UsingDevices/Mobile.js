@@ -12,7 +12,7 @@ const Mobile = ({toScroll}) => {
     return (
         <>
             <Header toScroll={toScroll} />
-            <ThreeDeal/>
+            {/*<ThreeDeal/>*/}
             <GlobalFuture/>
             <Service/>
             <FullStaff/>

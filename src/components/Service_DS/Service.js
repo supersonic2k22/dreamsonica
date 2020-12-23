@@ -17,7 +17,7 @@ const Service = () => {
 
     return (
         <WrapperService>
-            <Element id='service'/>
+            <Element id='how_do_we_work'/>
                 <Container>
                 <Row>
                     <Col md={12} lg={6} style={{alignSelf: "center"}}>

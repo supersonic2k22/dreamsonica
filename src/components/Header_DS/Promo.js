@@ -10,6 +10,7 @@ import {
  PromoText,
  PromoButton
 } from './style';
+import {ThreeDealText} from "../ThreeDeall_DS/style";
 
 
 const Promo = ({toScroll}) => {
@@ -18,19 +19,19 @@ const Promo = ({toScroll}) => {
             <Row>
                 <Col md={12} xl={10}>
                     <PromoTitle>
-                        Promotion's  Dream Sonica
+                        Performance Advertising Service
                     </PromoTitle>
                 </Col>
             </Row>
             <Row>
                 <Col  xl={12}>
-                    {/*<PromoText>*/}
-                    {/*    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,*/}
-                    {/*    at aut dicta ex exercitationem ipsam labore laborum minima modi*/}
-                    {/*    odit optio perferendis quos vitae! Culpa?*/}
-                    {/*</PromoText>*/}
+                    <PromoText>
+                        We provide a fully-managed user acquisition service for game\app developers.
+                        Since our founding, we have focused on two of the most important
+                        pieces of the user acquisition puzzle - ROI and Value.
+                    </PromoText>
                     <PromoButton  >
-                        <button className='promo_btn' onClick={()=> toScroll('same')}>Let's Talk</button>
+                        <button className='promo_btn' onClick={()=> toScroll('contact_us')}>Let's Talk</button>
                     </PromoButton>
 
                 </Col>

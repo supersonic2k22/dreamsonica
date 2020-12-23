@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const WrapperGlobalFuture = styled.div `
   padding: 10em 0;
+  box-shadow: 5px -21px 60px 45px white;
   @media (max-width: 500px) {
       padding: 3em;
 `;
@@ -43,9 +44,12 @@ text-align: center;
 `;
 
 export const GlobalFutureText = styled.p `
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   text-align: center;
   font-size: 1.4em;
+  @media(max-width: 991px){
+    margin-bottom: 70px;
+  }
 `;
 
 export const GlobalFutureItem = styled.div `
@@ -83,7 +87,7 @@ export const GlobalFutureItem = styled.div `
   .future_item_header {
     height: 100%;
     padding: 4em 0;
-    background: #3d93fc;
+    background: #0b37b5;
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
   }

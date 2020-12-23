@@ -27,23 +27,23 @@ export default class BurgerMenu extends Component{
                   onStateChange={(state) => {this.handleStateChange(state)}}>
                     <p id="expertise"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('workflow')}
+                       onClick={()=>this.burgerLinkClick('who_we_are')}
                     >
-                        POWER TEAM
+                        WHO WE ARE
                     </p>
                     <p id="service_fa"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('service')}>
-                        SERVICE
+                       onClick={()=>this.burgerLinkClick('why_choose_us')}>
+                        WHY CHOOSE US
                     </p>
                     <p id="home"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('powerTeam')}>
-                        WORKFLOW
+                       onClick={()=>this.burgerLinkClick('how_do_we_work')}>
+                        HOW DO WE WORK
                     </p>
                     <p id="contact"
                        className="menu-item"
-                       onClick={()=>this.burgerLinkClick('same')}>
+                       onClick={()=>this.burgerLinkClick('contact_us')}>
                         CONTACT US
                     </p>
             </Menu>

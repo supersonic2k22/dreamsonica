@@ -1,13 +1,8 @@
 import React, {Component} from "react";
 import {GlobalFutureItem, WrapperCarouselGlobal} from "./style";
 import Slider from "react-slick";
-import {Visible} from "react-grid-system";
-
-
 
 export default class MobileGlobalFuture extends Component {
-
-
 
     render() {
 
@@ -36,7 +31,7 @@ export default class MobileGlobalFuture extends Component {
                 <Slider {...settings}>
                     <GlobalFutureItem >
                         <div className="future_item_header">
-                            <img src={require('../../static/images/return-of-investment.png')} alt=""/>
+                            <img src={require('../../static/images/roi.png')} alt=""/>
                         </div>
                         <div className="future_item_footer">
                             <div>
@@ -46,7 +41,7 @@ export default class MobileGlobalFuture extends Component {
                     </GlobalFutureItem>
                     <GlobalFutureItem>
                         <div className="future_item_header">
-                            <img src={require('../../static/images/roi.png')} alt=""/>
+                            <img src={require('../../static/images/sway.png')} alt=""/>
                         </div>
                         <div className="future_item_footer">
                             <div>
@@ -66,7 +61,7 @@ export default class MobileGlobalFuture extends Component {
                     </GlobalFutureItem>
                     <GlobalFutureItem>
                         <div className="future_item_header">
-                            <img src={require('../../static/images/sway.png')} alt=""/>
+                            <img src={require('../../static/images/return-of-investment.png')} alt=""/>
                         </div>
                         <div className="future_item_footer">
                             <div>

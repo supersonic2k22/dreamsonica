@@ -15,9 +15,9 @@ const DeskTop = ({toScroll}) => {
             <Slide>
                 <Header toScroll={toScroll} />
             </Slide>
-            <Slide>
-                <ThreeDeal/>
-            </Slide>
+            {/*<Slide>*/}
+            {/*    <ThreeDeal/>*/}
+            {/*</Slide>*/}
             <Slide>
                 <GlobalFuture/>
             </Slide>

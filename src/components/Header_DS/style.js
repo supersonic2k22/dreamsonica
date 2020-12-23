@@ -53,9 +53,13 @@ export const PromoTitle = styled.h1 `
 export const PromoText = styled.p `
   padding-right: 3em;
   margin-bottom: 5em;
-  font-size: 1.5em;
+  text-align: left;
+  font-size: 1.4em;
+  line-height: 2.2em;
+  max-width: 50%;
   
   @media( max-width: 991px) {
+    max-width: 100%;
     text-align: center;
     padding-right: 0;
   }
@@ -139,8 +143,13 @@ justify-content: flex-end;
     padding-right: 10px;
     }
         @media(max-width: 1199px){
-          .navbar_menu_list {
+          .navbar_menu_list:not(:first-child) {
             margin-left: 2em !important;
           }
         }
+      @media(max-width: 1024px){
+        .navbar_menu_list:not(:first-child) {
+          margin-left: 1em !important;
+        }
+      }
 `;

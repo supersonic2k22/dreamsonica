@@ -14,25 +14,25 @@ const Navbar = ({toScroll}) => {
     return (
         <WrapperMenu>
             <div className="navbar_menu_list" style={{display: 'flex'}}>
-                <p  onClick={()=>toScroll('powerTeam')} style={{margin: 0, alignSelf: 'flex-end'}}>
+                <p  onClick={()=>toScroll('who_we_are')} style={{margin: 0, alignSelf: 'flex-end'}}>
                     <TeamOutlined className={'menu_icon_power-team'}/>
-                    POWER TEAM
+                    WHO WE ARE
                 </p>
             </div>
             <div className="navbar_menu_list">
-                <p  onClick={()=>toScroll('service')} style={{margin: 0, alignSelf: 'flex-end'}}>
+                <p  onClick={()=>toScroll('why_choose_us')} style={{margin: 0, alignSelf: 'flex-end'}}>
                     <RocketOutlined className={'menu_icon_service'}/>
-                    SERVICE
+                    WHY CHOOSE US
                 </p>
             </div>
             <div className="navbar_menu_list">
-                <p  onClick={()=>toScroll('workflow')} style={{margin: 0, alignSelf: 'flex-end'}}>
+                <p  onClick={()=>toScroll('how_do_we_work')} style={{margin: 0, alignSelf: 'flex-end'}}>
                     <ApiOutlined className={'menu_icon_workflow'}/>
-                    WORKFLOW
+                    HOW DO WE WORK
                 </p>
             </div>
             <div className="navbar_menu_list">
-                <p  onClick={()=>toScroll('same')} style={{margin: 0, alignSelf: 'flex-end'}}>
+                <p  onClick={()=>toScroll('contact_us')} style={{margin: 0, alignSelf: 'flex-end'}}>
                     <CommentOutlined className={'menu_icon_contact'}/>
                     CONTACT US
                 </p>

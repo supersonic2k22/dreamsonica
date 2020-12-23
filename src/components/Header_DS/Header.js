@@ -19,6 +19,8 @@ import {
     WrapperNavbar,
     TransitionNavbar
 } from './style';
+import {Element} from "react-scroll";
+import {WrapperService} from "../Service_DS/style";
 
 
 class Header extends Component{
@@ -77,6 +79,7 @@ class Header extends Component{
 
         return (
             <WrapperPlayer className={"wrapper-player"}>
+                <Element id='who_we_are'/>
                 <ReactPlayer
                     className='react-player'
                     url={[

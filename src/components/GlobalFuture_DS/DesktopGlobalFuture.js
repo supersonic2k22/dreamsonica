@@ -14,7 +14,7 @@ export default class DesktopGlobalFuture extends Component {
                     <Card>
                         <GlobalFutureItem>
                             <div className="future_item_header">
-                                <img src={require('../../static/images/return-of-investment.png')} alt=""/>
+                                <img src={require('../../static/images/roi.png')} alt=""/>
                             </div>
                             <div className="future_item_footer">
                                 <div>
@@ -28,7 +28,7 @@ export default class DesktopGlobalFuture extends Component {
                     <Card>
                         <GlobalFutureItem>
                             <div className="future_item_header">
-                                <img src={require('../../static/images/roi.png')} alt=""/>
+                                <img src={require('../../static/images/jigsaw.png')} alt=""/>
                             </div>
                             <div className="future_item_footer">
                                 <div>
@@ -42,7 +42,7 @@ export default class DesktopGlobalFuture extends Component {
                     <Card>
                         <GlobalFutureItem>
                             <div className="future_item_header">
-                                <img src={require('../../static/images/jigsaw.png')} alt=""/>
+                                <img src={require('../../static/images/sway.png')} alt=""/>
                             </div>
                             <div className="future_item_footer">
                                 <div>
@@ -56,7 +56,7 @@ export default class DesktopGlobalFuture extends Component {
                     <Card>
                         <GlobalFutureItem>
                             <div className="future_item_header">
-                                <img src={require('../../static/images/sway.png')} alt=""/>
+                                <img src={require('../../static/images/return-of-investment.png')} alt=""/>
                             </div>
                             <div className="future_item_footer">
                                 <div>
