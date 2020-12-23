@@ -20,15 +20,15 @@ const Navbar = ({toScroll}) => {
                 </p>
             </div>
             <div className="navbar_menu_list">
-                <p  onClick={()=>toScroll('workflow')} style={{margin: 0, alignSelf: 'flex-end'}}>
-                    <ApiOutlined className={'menu_icon_workflow'}/>
-                    WORKFLOW
-                </p>
-            </div>
-            <div className="navbar_menu_list">
                 <p  onClick={()=>toScroll('service')} style={{margin: 0, alignSelf: 'flex-end'}}>
                     <RocketOutlined className={'menu_icon_service'}/>
                     SERVICE
+                </p>
+            </div>
+            <div className="navbar_menu_list">
+                <p  onClick={()=>toScroll('workflow')} style={{margin: 0, alignSelf: 'flex-end'}}>
+                    <ApiOutlined className={'menu_icon_workflow'}/>
+                    WORKFLOW
                 </p>
             </div>
             <div className="navbar_menu_list">

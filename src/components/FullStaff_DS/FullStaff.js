@@ -18,7 +18,7 @@ export default class FullStaff extends Component{
     render() {
         return(
            <WrapperFullStaff>
-               <Element id="power_team" className={"power-team"}/>
+               <Element id="workflow" className={"power-team"}/>
                    <Container>
                        <Fade bottom>
                            <Row>
