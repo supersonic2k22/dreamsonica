@@ -114,7 +114,7 @@ export const GlobalFutureItem = styled.div `
     vertical-align: middle;
   }
       
-      @media(min-width: 1440px) {
+      @media(min-width: 1199px) {
         .future_item_footer {
           height: 200px;
         }
