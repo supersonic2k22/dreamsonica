@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const WrapperFrom = styled.div `
-  padding: 4em 0 0;
+  padding: 10em 0 0;
   height: 100%;
   position: relative;
   font-family: Montserrat;
@@ -14,6 +14,20 @@ export const WrapperFrom = styled.div `
     font-size: calc(.028 * 100vw);
     font-weight: 600;
     line-height: 1;
+  }
+  
+  .wrapper_checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media(max-width: 576px) {
+    .wrapper_checkbox {
+      flex-direction: column;
+    }
+    .form_checkbox {
+      margin-bottom: 20px;
+    }
   }
   
   .wrapper_btn {

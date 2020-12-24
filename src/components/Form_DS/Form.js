@@ -90,11 +90,12 @@ const ContactForm = () =>{
                                                   value={values.text}
                                         >
                             </textarea>
-                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                        <div className={'wrapper_checkbox'} >
                                             <Checkbox name="acceptedTerms"
                                                       style={{ fontSize: '1.2em'}}
                                                       onChange={handleChange}
                                                       onBlur={handleBlur}
+                                                      className={'form_checkbox'}
                                             >
                                                 Yes, I've read and agree to the <a href="#">Privacy Policy</a>.
                                             </Checkbox>

@@ -10,11 +10,11 @@ export const WrapperFooter = styled.div `
 `;
 
 export const WrapperFooterContent = styled.div `
-  padding: 2em 0;
+  padding: 1em 0;
   background: RGBA(252,252,255,1);
 `;
 export const WrapperFooterPrivacy = styled.div `
-  padding: 4em 0;
+  padding: 2em 0;
   background: #636363;
   color: #ccc;
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const WrapperFullStaff = styled.div `
-  padding: 8em 0 3em;
+  padding: 10em 0 3em;
   background: white;
   @media (max-width: 991px){
     padding-top: 10em;
