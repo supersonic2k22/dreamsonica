@@ -45,9 +45,6 @@ const ContactForm = () =>{
                                 alert(JSON.stringify(value, null,2));
                                 console.log(value)
                             }}
-                            // onSubmit={ values => {
-                            //     alert(JSON.stringify(values, null, 2));
-                            // }}
 
                             handleSubmit={ (values, { setSubmitting }) => {
                                 alert(JSON.stringify(values, null, 2));
@@ -93,15 +90,17 @@ const ContactForm = () =>{
                                                   value={values.text}
                                         >
                             </textarea>
-                                        <Checkbox name="acceptedTerms"
-                                                  style={{ fontSize: '1.2em'}}
-                                                  onChange={handleChange}
-                                                  onBlur={handleBlur}
-                                        >
-                                            Yes, I've read and agree to the <a href="#">Privacy Policy</a>.
-                                        </Checkbox>
-                                        <div className="wrapper_btn">
-                                            <button  type={"submit"} className="form_submit_btn">Send</button>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <Checkbox name="acceptedTerms"
+                                                      style={{ fontSize: '1.2em'}}
+                                                      onChange={handleChange}
+                                                      onBlur={handleBlur}
+                                            >
+                                                Yes, I've read and agree to the <a href="#">Privacy Policy</a>.
+                                            </Checkbox>
+                                            <div className="wrapper_btn">
+                                                <button  type={"submit"} className="form_submit_btn">Send</button>
+                                            </div>
                                         </div>
                                     </form>
                                 )

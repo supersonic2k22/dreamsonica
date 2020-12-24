@@ -49,11 +49,8 @@ class Header extends Component{
     }
 
     handleScroll = () => {
-        const { scrollPos } = this.state;
-
         this.setState({
-            scrollPos: document.body.getBoundingClientRect().top,
-            show: document.body.getBoundingClientRect().top > scrollPos,
+            scrollPos: document.body.getBoundingClientRect().top
         })
     }
 
@@ -119,7 +116,6 @@ class Header extends Component{
             </WrapperPlayer>
         );
     }
-
 }
 
 export default Header;

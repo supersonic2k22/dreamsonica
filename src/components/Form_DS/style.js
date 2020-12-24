@@ -17,7 +17,6 @@ export const WrapperFrom = styled.div `
   }
   
   .wrapper_btn {
-  margin-top: 2em;
   text-align: center;
   }
   .form_submit_btn {
