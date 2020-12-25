@@ -137,6 +137,11 @@ export const GlobalFutureItem = styled.div `
         height: 150px;
       }
     }
+    @media(max-height: 768px){
+      .future_item_footer {
+        height: 170px;
+      }
+    }
     @media(max-width: 375px) {
       .future_item_header {
         padding: 2em 0;

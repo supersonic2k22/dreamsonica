@@ -30,26 +30,26 @@ const FooterContent = () => {
                     </Col>
                     <Col md={12} lg={4} style={{alignSelf: "center"}}>
                         <WrapperSocialLinks>
+                            {/*<div className="social_links_item">*/}
+                            {/*        <a href="https://www.instagram.com/" target="_blank" title="Instagram">*/}
+                            {/*            <InstagramOutlined />*/}
+                            {/*        </a>*/}
+                            {/*</div>*/}
                             <div className="social_links_item">
-                                    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
-                                        <InstagramOutlined />
-                                    </a>
-                            </div>
-                            <div className="social_links_item">
-                                <a href="https://www.facebook.com/" target="_blank" title="Facebook">
-                                    <FacebookOutlined />
-                                </a>
-                            </div>
-                            <div className="social_links_item">
-                                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+                                <a href="https://www.linkedin.com/company/12602749" target="_blank" title="LinkedIn">
                                     <LinkedinOutlined />
                                 </a>
                             </div>
                             <div className="social_links_item">
-                                <a href="https://twitter.com/?lang=en" target="_blank" title="Twitter">
-                                    <TwitterOutlined />
+                                <a href="https://www.facebook.com/dreamsonica" target="_blank" title="Facebook">
+                                    <FacebookOutlined />
                                 </a>
                             </div>
+                            {/*<div className="social_links_item">*/}
+                            {/*    <a href="https://twitter.com/?lang=en" target="_blank" title="Twitter">*/}
+                            {/*        <TwitterOutlined />*/}
+                            {/*    </a>*/}
+                            {/*</div>*/}
                         </WrapperSocialLinks>
                     </Col>
                 </Row>

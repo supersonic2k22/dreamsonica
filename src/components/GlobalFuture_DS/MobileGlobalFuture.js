@@ -41,7 +41,7 @@ export default class MobileGlobalFuture extends Component {
                     </GlobalFutureItem>
                     <GlobalFutureItem>
                         <div className="future_item_header">
-                            <img src={require('../../static/images/sway.png')} alt=""/>
+                            <img src={require('../../static/images/jigsaw.png')} alt=""/>
                         </div>
                         <div className="future_item_footer">
                             <div>
@@ -51,7 +51,7 @@ export default class MobileGlobalFuture extends Component {
                     </GlobalFutureItem>
                     <GlobalFutureItem>
                         <div className="future_item_header">
-                            <img src={require('../../static/images/jigsaw.png')} alt=""/>
+                            <img src={require('../../static/images/sway.png')} alt=""/>
                         </div>
                         <div className="future_item_footer">
                             <div>

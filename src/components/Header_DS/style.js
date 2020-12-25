@@ -34,6 +34,9 @@ export const WrapperPromo = styled.div `
   @media( max-width: 425px) {
     padding-top: 20em;
   }
+  @media(max-height: 425px) {
+    padding-top: 12em;
+  }
   @media( max-width: 375px) {
     padding-top: 12em;
   }
@@ -62,6 +65,9 @@ export const PromoText = styled.p `
     max-width: 100%;
     text-align: center;
     padding-right: 0;
+  }
+  @media(max-height: 425px) {
+    margin-bottom: 2em;
   }
 `;
 

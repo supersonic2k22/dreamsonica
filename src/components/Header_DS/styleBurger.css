@@ -26,6 +26,12 @@
     top: -70px;
 }
 
+@media(max-height: 576px) {
+    .bm-burger-button {
+        top: -50px;
+    }
+}
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
     background: #ff8d00;
