@@ -31,6 +31,9 @@ export const WrapperPlayer = styled.div `
 export const WrapperPromo = styled.div `
   padding: 23em 0 6em 0;
 
+  @media(min-height: 768px){
+    padding-top: 18em;
+  }
   @media( max-width: 425px) {
     padding-top: 20em;
   }
@@ -65,6 +68,9 @@ export const PromoText = styled.p `
     max-width: 100%;
     text-align: center;
     padding-right: 0;
+  }
+  @media(min-height: 768px){
+    margin-bottom: 3em;
   }
   @media(max-height: 425px) {
     margin-bottom: 2em;

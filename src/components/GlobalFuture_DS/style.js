@@ -132,15 +132,20 @@ export const GlobalFutureItem = styled.div `
           padding-top: 1.5em;
        }
       }
+      @media(min-height: 768px){
+        .future_item_footer {
+          height: 170px;
+        }
+      }
+      @media(max-height: 768px){
+        .future_item_footer {
+          height: 170px;
+        }
     @media(max-width: 576px) {
       .future_item_footer {
         height: 150px;
       }
     }
-    @media(max-height: 768px){
-      .future_item_footer {
-        height: 170px;
-      }
     }
     @media(max-width: 375px) {
       .future_item_header {

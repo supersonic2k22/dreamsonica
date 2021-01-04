@@ -5,13 +5,10 @@ import FooterPrivacy from "./FooterPrivacy";
 import {
     WrapperFooter
 } from './style'
-import {
-    isMobile, isTablet
-} from "react-device-detect";
 
 const Footer = () => {
     return(
-        <WrapperFooter isDesktop={!isMobile && !isTablet}>
+        <WrapperFooter >
             <FooterContent/>
             <FooterPrivacy/>
         </WrapperFooter>

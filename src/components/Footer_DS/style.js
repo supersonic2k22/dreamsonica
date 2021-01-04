@@ -1,12 +1,7 @@
 import styled from 'styled-components'
 
 export const WrapperFooter = styled.div `
-  margin-top: 70px;
-  ${({ isDesktop }) => isDesktop && `
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  `}
+  margin-top: 10px;
 `;
 
 export const WrapperFooterContent = styled.div `
@@ -17,10 +12,6 @@ export const WrapperFooterPrivacy = styled.div `
   padding: 2em 0;
   background: #636363;
   color: #ccc;
-
-  @media(max-width: 1199px) {
-    padding: 2em 0;
-  }
 `;
 export const WrapperLogoFooter = styled.div `
   display: flex;

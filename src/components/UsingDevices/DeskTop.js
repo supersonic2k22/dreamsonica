@@ -7,27 +7,39 @@ import Service from "../Service_DS";
 import FullStaff from "../FullStaff_DS";
 import Form from "../Form_DS";
 
+import styled from 'styled-components'
 
+const WrapperDeskTop = styled.div `
+    
+    @media(min-height: 768px) {
+      .custom_style {
+        height: auto !important;
+      }
+    }
+`;
 const DeskTop = ({toScroll}) => {
 
     return (
-        <FullPage>
-            <Slide>
-                <Header toScroll={toScroll} />
-            </Slide>
-            <Slide>
-                <GlobalFuture/>
-            </Slide>
-            <Slide>
-                <Service/>
-            </Slide>
-            <Slide>
-                <FullStaff/>
-            </Slide>
-            <Slide>
-                <Form/>
-            </Slide>
-        </FullPage>
+        <WrapperDeskTop>
+            <FullPage>
+                <Slide>
+                    <Header toScroll={toScroll} />
+                </Slide>
+                <Slide>
+                    <GlobalFuture/>
+                </Slide>
+                <Slide>
+                    <Service/>
+                </Slide>
+                <Slide>
+                    <FullStaff/>
+                </Slide>
+                <Slide className={'custom_style'}>
+                    <Form/>
+                </Slide>
+            </FullPage>
+        </WrapperDeskTop>
+
     )
 }
 
