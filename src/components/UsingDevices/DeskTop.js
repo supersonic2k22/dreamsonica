@@ -6,6 +6,7 @@ import GlobalFuture from "../GlobalFuture_DS";
 import Service from "../Service_DS";
 import FullStaff from "../FullStaff_DS";
 import Form from "../Form_DS";
+import VideoPlayer from '../Video';
 
 import styled from 'styled-components'
 
@@ -27,6 +28,9 @@ const DeskTop = ({toScroll}) => {
                 </Slide>
                 <Slide>
                     <GlobalFuture/>
+                </Slide>
+                <Slide>
+                    <VideoPlayer/>
                 </Slide>
                 <Slide>
                     <Service/>

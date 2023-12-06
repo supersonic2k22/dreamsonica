@@ -5,6 +5,7 @@ import GlobalFuture from "../GlobalFuture_DS";
 import Service from "../Service_DS";
 import FullStaff from "../FullStaff_DS";
 import Form from "../Form_DS";
+import Video from "../Video";
 
 
 const Mobile = ({toScroll}) => {
@@ -14,6 +15,7 @@ const Mobile = ({toScroll}) => {
             <Header toScroll={toScroll} />
             <GlobalFuture/>
             <Service/>
+            <Video />
             <FullStaff/>
             <Form/>
         </>
